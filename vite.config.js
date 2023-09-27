@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
   build: {
       outDir : "build"
-    }
+  },
+  base: './', // This sets the base path to the root directory
 })
