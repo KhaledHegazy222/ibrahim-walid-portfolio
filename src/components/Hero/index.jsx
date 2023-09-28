@@ -20,6 +20,7 @@ const Hero = () => {
           zIndex: 2,
         }}
       >
+        {/* <ParticlesBackground /> */}
         <div
           style={{
             width: "40%",
@@ -63,6 +64,7 @@ const Hero = () => {
           </p>
           <div>
             <StyledFilledLink
+              href="#"
               style={{
                 width: "150px",
                 textAlign: "center",
@@ -71,7 +73,7 @@ const Hero = () => {
             >
               Hire me
             </StyledFilledLink>
-            <StyledOutlinedLink>See Portfolio</StyledOutlinedLink>
+            <StyledOutlinedLink href="#"> See Portfolio</StyledOutlinedLink>
           </div>
           <div>
             <StyleLinksList>
@@ -106,7 +108,6 @@ const Hero = () => {
           />
         </a>
       </section>
-      <ParticlesBackground />
     </>
   );
 };

@@ -6,7 +6,7 @@ export const StyledAppBar = styled(AppBar)({
   backgroundColor: "#001227",
   position: "fixed",
   boxShadow: "none",
-  zIndex: "2",
+  zIndex: "3",
 });
 
 export const StyledToolbar = styled(Toolbar)({

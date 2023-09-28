@@ -48,7 +48,7 @@ const Navbar = () => {
               <a href="#">Contact</a>
             </StyledLinkElement>
           </StyledLinksList>
-          <StyledFilledLink>Download CV</StyledFilledLink>
+          <StyledFilledLink href="#">Download CV</StyledFilledLink>
           <StyledLanguageButton>
             <img src={languageIcon} />
             <p>Ar</p>
