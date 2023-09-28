@@ -20,7 +20,7 @@ const Hero = () => {
           zIndex: 2,
         }}
       >
-        {/* <ParticlesBackground /> */}
+        <ParticlesBackground />
         <div
           style={{
             width: "40%",
