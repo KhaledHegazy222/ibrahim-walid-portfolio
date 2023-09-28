@@ -10,6 +10,7 @@ import ParticlesBackground from "../ParticlesBackground";
 const Hero = () => {
   return (
     <>
+      <ParticlesBackground />
       <section
         style={{
           height: "100%",
@@ -17,10 +18,9 @@ const Hero = () => {
           alignItems: "center",
           justifyContent: "center",
           position: "relative",
-          zIndex: 2,
+          zIndex: "2",
         }}
       >
-        <ParticlesBackground />
         <div
           style={{
             width: "40%",
@@ -62,7 +62,11 @@ const Hero = () => {
             I&apos;m creative designer based in New York, and I&apos;m very
             passionate and dedicated to my work
           </p>
-          <div>
+          <div
+            style={{
+              margin: "30px 0",
+            }}
+          >
             <StyledFilledLink
               href="#"
               style={{

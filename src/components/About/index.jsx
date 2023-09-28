@@ -10,7 +10,14 @@ import {
 
 const About = () => {
   return (
-    <StyledSection>
+    <StyledSection
+      style={{
+        gap: "10%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <img src={aboutImage} />
       <StyledContent>
         <StyledColoredSubTitle>I&apos;m a Designer</StyledColoredSubTitle>

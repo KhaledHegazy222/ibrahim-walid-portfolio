@@ -5,10 +5,8 @@ export const StyledSection = styled("section")({
   padding: "100px 0",
   width: "80%",
   margin: "auto",
-  gap: "10%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
+  position: "relative",
+  zIndex: "3",
 });
 
 export const StyledContent = styled("div")({

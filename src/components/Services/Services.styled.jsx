@@ -1,9 +1,6 @@
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 
-export const StyledSection = styled("section")({
-  padding: "100px 0",
-});
 export const StyledGridContainer = styled(Grid)({
   padding: "50px 0",
   display: "grid",

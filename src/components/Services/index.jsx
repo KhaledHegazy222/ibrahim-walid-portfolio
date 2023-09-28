@@ -1,5 +1,9 @@
 import { Box } from "@mui/system";
-import { StyledColoredSubTitle, StyledParagraph } from "../About/About.styled";
+import {
+  StyledColoredSubTitle,
+  StyledParagraph,
+  StyledSection,
+} from "../About/About.styled";
 import ui_design_image from "../../assets/services/ui_design.png";
 import ux_design_image from "../../assets/services/ux_design.png";
 import social_media_design_image from "../../assets/services/social_media_design.png";
@@ -8,7 +12,7 @@ import mobile_app_design_image from "../../assets/services/mobile_app_design.png
 import web_design_image from "../../assets/services/web_design.png";
 import identity_design_image from "../../assets/services/identity_design.png";
 import graphic_design_image from "../../assets/services/graphic_design.png";
-import { StyledGridContainer, StyledGridItem, StyledSection } from "./Services.styled";
+import { StyledGridContainer, StyledGridItem } from "./Services.styled";
 
 const servicesList = [
   {
@@ -55,7 +59,11 @@ const servicesList = [
 
 const Services = () => {
   return (
-    <StyledSection>
+    <StyledSection
+      style={{
+        width: "95%",
+      }}
+    >
       <Box
         sx={{
           textAlign: "center",
