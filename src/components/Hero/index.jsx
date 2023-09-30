@@ -1,3 +1,5 @@
+import Typed from "react-typed";
+
 import heroImage from "../../assets/hero.png";
 import whatsappIcon from "../../assets/whatsapp.svg";
 import linkedinIcon from "../../assets/linkedin.png";
@@ -10,7 +12,7 @@ import ParticlesBackground from "../ParticlesBackground";
 const Hero = () => {
   return (
     <>
-      {/* <ParticlesBackground /> */}
+      <ParticlesBackground />
       <section
         style={{
           height: "100%",
@@ -51,7 +53,13 @@ const Hero = () => {
                 color: "#45A0FF",
               }}
             >
-              UI/UX Designer
+              <Typed
+                strings={["UI/UX Designer", "Web Designer"]}
+                typeSpeed={60}
+                backSpeed={60}
+                backDelay={3000}
+                loop
+              />
             </span>
           </h2>
           <p
