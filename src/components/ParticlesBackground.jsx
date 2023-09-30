@@ -17,7 +17,7 @@ const ParticlesBackground = () => {
             value: "transparent",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
           events: {
             resize: true,

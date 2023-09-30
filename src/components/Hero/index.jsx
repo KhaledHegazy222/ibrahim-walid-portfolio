@@ -10,7 +10,7 @@ import ParticlesBackground from "../ParticlesBackground";
 const Hero = () => {
   return (
     <>
-      <ParticlesBackground />
+      {/* <ParticlesBackground /> */}
       <section
         style={{
           height: "100%",
