@@ -1,5 +1,5 @@
 import {
-  StyledColoredSubTitle,
+  StyledColoredTitle,
   StyledGraySubTitle,
   StyledSection,
 } from "../About/About.styled";
@@ -16,7 +16,7 @@ import trello_image from "../../assets/tools/trello.png";
 const Tools = () => {
   return (
     <StyledSection>
-      <StyledColoredSubTitle margin="auto">Tools</StyledColoredSubTitle>
+      <StyledColoredTitle margin="auto">Tools</StyledColoredTitle>
       <StyledGraySubTitle textAlign="center" width="592px" margin="auto">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design

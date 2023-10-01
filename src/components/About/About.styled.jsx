@@ -13,7 +13,7 @@ export const StyledContent = styled("div")({
   width: "585px",
 });
 
-export const StyledColoredSubTitle = styled(Typography)({
+export const StyledColoredTitle = styled(Typography)({
   background: "linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",
   width: "fit-content",
   WebkitBackgroundClip: "text",

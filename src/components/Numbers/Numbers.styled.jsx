@@ -1,5 +1,5 @@
 import { Grid, Typography, styled } from "@mui/material";
-import { StyledColoredSubTitle } from "../About/About.styled";
+import { StyledColoredTitle } from "../About/About.styled";
 
 export const StyledGridContainer = styled(Grid)({
   display: "gird",
@@ -21,7 +21,7 @@ export const StyledSummaryElement = styled(Grid)({
   justifyContent: "center",
 });
 
-export const StyledTitle = styled(StyledColoredSubTitle)({
+export const StyledTitle = styled(StyledColoredTitle)({
   fontSize: "56px",
   fontWeight: "700",
   padding: "0",

@@ -102,24 +102,24 @@ const Hero = () => {
           </div>
         </div>
         <img src={heroImage} />
-
-        <a
-          href="#"
+      </section>{" "}
+      <a
+        href="#"
+        style={{
+          position: "fixed",
+          zIndex: "4",
+          right: "20px",
+          bottom: "20px",
+        }}
+      >
+        <img
+          src={whatsappIcon}
           style={{
-            position: "fixed",
-            right: "20px",
-            bottom: "20px",
+            margin: "0",
+            padding: "0",
           }}
-        >
-          <img
-            src={whatsappIcon}
-            style={{
-              margin: "0",
-              padding: "0",
-            }}
-          />
-        </a>
-      </section>
+        />
+      </a>
     </>
   );
 };

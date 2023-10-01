@@ -1,5 +1,5 @@
 import {
-  StyledColoredSubTitle,
+  StyledColoredTitle,
   StyledParagraph,
   StyledSection,
 } from "../About/About.styled";
@@ -8,7 +8,7 @@ import { StyledList, StyledListItem } from "./Skills.styled";
 const Skills = () => {
   return (
     <StyledSection>
-      <StyledColoredSubTitle
+      <StyledColoredTitle
         component="h4"
         style={{
           margin: "auto",
@@ -16,7 +16,7 @@ const Skills = () => {
         }}
       >
         Skills
-      </StyledColoredSubTitle>
+      </StyledColoredTitle>
       <StyledParagraph
         style={{
           textAlign: "center",

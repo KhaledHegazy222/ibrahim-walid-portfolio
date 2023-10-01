@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import {
-  StyledColoredSubTitle,
+  StyledColoredTitle,
   StyledParagraph,
   StyledSection,
 } from "../About/About.styled";
@@ -71,7 +71,7 @@ const Services = () => {
           margin: "auto",
         }}
       >
-        <StyledColoredSubTitle
+        <StyledColoredTitle
           component="h4"
           style={{
             margin: "auto",
@@ -79,7 +79,7 @@ const Services = () => {
           }}
         >
           Services
-        </StyledColoredSubTitle>
+        </StyledColoredTitle>
         <StyledParagraph
           style={{
             padding: "4px",

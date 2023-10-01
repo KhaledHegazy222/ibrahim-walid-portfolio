@@ -1,5 +1,5 @@
 import {
-  StyledColoredSubTitle,
+  StyledColoredTitle,
   StyledGraySubTitle,
   StyledSection,
 } from "../About/About.styled";
@@ -7,7 +7,7 @@ import {
 const Portfolio = () => {
   return (
     <StyledSection>
-      <StyledColoredSubTitle margin="auto">Portfolio</StyledColoredSubTitle>
+      <StyledColoredTitle margin="auto">Portfolio</StyledColoredTitle>
       <StyledGraySubTitle margin="auto" width="592px" textAlign="center">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design

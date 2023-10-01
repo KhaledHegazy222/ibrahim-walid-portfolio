@@ -1,7 +1,4 @@
-import {
-  StyledColoredSubTitle,
-  StyledGraySubTitle,
-} from "../About/About.styled";
+import { StyledColoredTitle, StyledGraySubTitle } from "../About/About.styled";
 import {
   StyledGridContainer,
   StyledGridItem,
@@ -17,9 +14,9 @@ import { ArrowForward } from "@mui/icons-material";
 const Clients = () => {
   return (
     <StyledSection>
-      <StyledColoredSubTitle margin="auto">
+      <StyledColoredTitle margin="auto">
         What I Do for Clients
-      </StyledColoredSubTitle>
+      </StyledColoredTitle>
       <StyledGraySubTitle margin="auto" width="592px" textAlign="center">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design

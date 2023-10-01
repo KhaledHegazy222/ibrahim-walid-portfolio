@@ -9,7 +9,7 @@ export const StyledSection = styled(DefaultStyledSection)({
 export const StyledGridContainer = styled("ul")({
   padding: "60px 0",
   display: "grid",
-  gridTemplate: "1fr / repeat(2,585px)",
+  gridTemplate: "1fr / repeat(auto-fit,585px)",
   gap: "30px",
   justifyContent: "center",
   alignContent: "center",

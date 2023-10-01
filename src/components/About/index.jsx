@@ -1,7 +1,7 @@
 import aboutImage from "../../assets/about.svg";
 import { StyledFilledLink } from "../Navbar/Navbar.styled";
 import {
-  StyledColoredSubTitle,
+  StyledColoredTitle,
   StyledContent,
   StyledParagraph,
   StyledSection,
@@ -20,7 +20,7 @@ const About = () => {
     >
       <img src={aboutImage} />
       <StyledContent>
-        <StyledColoredSubTitle>I&apos;m a Designer</StyledColoredSubTitle>
+        <StyledColoredTitle>I&apos;m a Designer</StyledColoredTitle>
         <StyledTitle>I can design anything you want</StyledTitle>
         <StyledParagraph>
           Hello there! I&apos;m a web designer, and I&apos;m very passionate and
