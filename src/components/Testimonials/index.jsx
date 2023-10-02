@@ -6,7 +6,52 @@ import {
   StyledSection,
 } from "../About/About.styled";
 import { StyledList } from "./Testimonials.styled";
+import { useEffect, useState } from "react";
+
+const testimonialsList = [
+  {
+    title: "Owner Of Target Company",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut ",
+    ratingValue: 5,
+    image: card_image,
+  },
+  {
+    title: "Owner Of Target Company",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida.",
+    ratingValue: 3,
+    image: card_image,
+  },
+  {
+    title: "Owner Of Target Company",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida. Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida.",
+    ratingValue: 4,
+    image: card_image,
+  },
+  {
+    title: "Owner Of Target Company",
+    content:
+      "Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida. Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida.",
+    ratingValue: 4,
+    image: card_image,
+  },
+];
+
 const Testimonials = () => {
+  const [middleCard, setMiddleCard] = useState(0);
+  const leftCard = (middleCard + 1) % testimonialsList.length;
+  const rightCard =
+    (middleCard - 1 + testimonialsList.length) % testimonialsList.length;
+  console.log(leftCard, middleCard, rightCard);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setMiddleCard((prevValue) => (prevValue + 1) % testimonialsList.length);
+    }, 3000);
+    return () => clearInterval(intervalId);
+  }, [setMiddleCard]);
   return (
     <StyledSection
       style={{
@@ -19,34 +64,26 @@ const Testimonials = () => {
         responsive and adaptive design
       </StyledGraySubTitle>
       <StyledList>
-        <Card
-          title="Owner Of Target Company"
-          content="Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida."
-          ratingValue={5}
-          img={card_image}
-          position="Left"
-        />
-        <Card
-          title="Owner Of Target Company"
-          content="Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida."
-          ratingValue={5}
-          img={card_image}
-          position="Middle"
-        />
-
-        <Card
-          title="Owner Of Target Company"
-          content="Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida."
-          ratingValue={5}
-          img={card_image}
-          position="Right"
-        />
-        <Card
-          title="Owner Of Target Company"
-          content="Lorem ipsum dolor sit amet consectetur. Maecenas proin magna aenean eget quam in sit cursus. Nec dapibus et ut nulla neque hac feugiat. Mollis netus duis a eu condimentum et turpis ultrices. Leo egestas commodo augue leo gravida."
-          ratingValue={5}
-          img={card_image}
-        />
+        {testimonialsList.map(
+          ({ title, content, image, ratingValue }, index) => (
+            <Card
+              key={index}
+              title={title}
+              content={content}
+              img={image}
+              ratingValue={ratingValue}
+              position={
+                index === leftCard
+                  ? "Left"
+                  : index === rightCard
+                  ? "Right"
+                  : index === middleCard
+                  ? "Middle"
+                  : "Hidden"
+              }
+            />
+          )
+        )}
       </StyledList>
     </StyledSection>
   );
