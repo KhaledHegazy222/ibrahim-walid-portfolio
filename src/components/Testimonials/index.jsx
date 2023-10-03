@@ -44,7 +44,6 @@ const Testimonials = () => {
   const leftCard = (middleCard + 1) % testimonialsList.length;
   const rightCard =
     (middleCard - 1 + testimonialsList.length) % testimonialsList.length;
-  console.log(leftCard, middleCard, rightCard);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
