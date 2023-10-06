@@ -1,28 +1,54 @@
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 
-export const StyledGridContainer = styled(Grid)({
-  padding: "50px 0",
+export const StyledGridContainer = styled("div")({
   display: "grid",
-  gridTemplate: "1fr / repeat(auto-fill,400px)",
-  justifyContent: "center",
-  justifyItems: "center",
-  alignContent: "center",
-  alignItems: "center",
+  gridTemplate: "1fr / repeat(4,1fr)",
+  gap: "30px",
 });
 
 export const StyledGridItem = styled(Grid)({
-  height: "280px",
-  background:
-    "linear-gradient(90deg, rgba(11, 69, 179, 0.05) 0%, rgba(40, 139, 240, 0.05) 100%)",
+  backgroundColor: "#f4f8fe",
   borderRadius: "8px",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  gap: "10px",
-  padding: "20px",
-  margin: "20px",
-  maxWidth: "280px",
   textAlign: "center",
+  padding: "53.5px 21.5px",
+  aspectRatio: "1 / 1",
+  position: "relative",
+  transition: "all 300ms",
+  "&:hover": {
+    backgroundColor: "white",
+    boxShadow: "0px 0px 20px 0px rgba(0, 0, 0, 0.12)",
+    "&::before, &::after": {
+      opacity: 1,
+    },
+  },
+  "&::before, &::after": {
+    position: "absolute",
+    backgroundColor: "#0B45B3",
+    content: "''",
+    width: "80px",
+    height: "80px",
+    display: "block",
+    zIndex: "-1",
+    transition: "all 300ms",
+    opacity: "0",
+  },
+  "&::before": {
+    left: "-4px",
+    top: "-4px",
+    borderTopLeftRadius: "13px",
+  },
+  "&::after": {
+    right: "-4px",
+    bottom: "-4px",
+    borderBottomRightRadius: "13px",
+  },
+});
+
+export const StyledImage = styled("img")({
+  marginBottom: "24px",
 });

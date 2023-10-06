@@ -12,7 +12,11 @@ import mobile_app_design_image from "../../assets/services/mobile_app_design.png
 import web_design_image from "../../assets/services/web_design.png";
 import identity_design_image from "../../assets/services/identity_design.png";
 import graphic_design_image from "../../assets/services/graphic_design.png";
-import { StyledGridContainer, StyledGridItem } from "./Services.styled";
+import {
+  StyledGridContainer,
+  StyledGridItem,
+  StyledImage,
+} from "./Services.styled";
 
 const servicesList = [
   {
@@ -61,7 +65,7 @@ const Services = () => {
   return (
     <StyledSection
       style={{
-        width: "95%",
+        paddingBottom: "170px",
       }}
     >
       <Box
@@ -69,6 +73,7 @@ const Services = () => {
           textAlign: "center",
           width: "520px",
           margin: "auto",
+          marginBottom: "80px",
         }}
       >
         <StyledColoredTitle
@@ -89,20 +94,41 @@ const Services = () => {
           is responsive and adaptive design
         </StyledParagraph>
       </Box>
-      <StyledGridContainer container>
+      <StyledGridContainer>
         {servicesList.map((service, index) => (
-          <StyledGridItem item key={index}>
-            <img src={service.image} />
+          <StyledGridItem key={index}>
+            <StyledImage src={service.image} />
             <h5
               style={{
-                fontWeight: "700",
-                fontSize: "24px",
                 whiteSpace: "nowrap",
+                color: "#191919",
+                textAlign: "center",
+                leadingTrim: " both",
+                textEdge: " cap",
+                fontSize: " 24px",
+                fontStyle: " normal",
+                fontWeight: " 700",
+                marginBottom: "16px",
+                padding: "0",
+                height: "17px",
               }}
             >
               {service.title}
             </h5>
-            <p>{service.content}</p>
+            <p
+              style={{
+                color: "#4D4D4D",
+                textAlign: "center",
+                leadingTrim: "both",
+                textEdge: "cap",
+                fontSize: "16px",
+                fontStyle: "normal",
+                fontWeight: "400",
+                lineHeight: "140%",
+              }}
+            >
+              {service.content}
+            </p>
           </StyledGridItem>
         ))}
       </StyledGridContainer>

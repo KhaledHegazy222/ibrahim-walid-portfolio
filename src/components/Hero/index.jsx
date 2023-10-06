@@ -102,7 +102,7 @@ const Hero = () => {
           </div>
         </div>
         <img src={heroImage} />
-      </section>{" "}
+      </section>
       <a
         href="#"
         style={{

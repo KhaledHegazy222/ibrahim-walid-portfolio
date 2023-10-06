@@ -18,7 +18,6 @@ import {
   StyledImageContainer,
   StyledImageDescription,
 } from "./Portfolio.styled";
-import { Typography } from "@mui/material";
 
 const tagsList = [
   {

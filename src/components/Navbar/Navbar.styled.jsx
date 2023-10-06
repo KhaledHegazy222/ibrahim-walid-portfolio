@@ -3,7 +3,8 @@ import styled from "@emotion/styled";
 import { AppBar, Button, List, ListItem, Toolbar } from "@mui/material";
 
 export const StyledAppBar = styled(AppBar)({
-  backgroundColor: "#001227",
+  background:
+    "linear-gradient(90deg, #00387A -41.84%, #001227 64.41%, #001227 64.41%)",
   position: "fixed",
   boxShadow: "none",
   zIndex: "4",
