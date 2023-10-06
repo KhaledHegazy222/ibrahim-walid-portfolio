@@ -23,6 +23,8 @@ export const StyledGridItem = styled(Grid)({
     backgroundColor: "white",
     boxShadow: "0px 0px 20px 0px rgba(0, 0, 0, 0.12)",
     "&::before, &::after": {
+      width: "80px",
+      height: "80px",
       opacity: 1,
     },
   },
@@ -30,11 +32,11 @@ export const StyledGridItem = styled(Grid)({
     position: "absolute",
     backgroundColor: "#0B45B3",
     content: "''",
-    width: "80px",
-    height: "80px",
     display: "block",
     zIndex: "-1",
     transition: "all 300ms",
+    width: "10px",
+    height: "10px",
     opacity: "0",
   },
   "&::before": {
