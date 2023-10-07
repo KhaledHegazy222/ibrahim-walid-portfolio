@@ -21,16 +21,20 @@ const Hero = () => {
           justifyContent: "center",
           position: "relative",
           zIndex: "2",
+          padding: "120px",
+          gap: "30px",
         }}
       >
         <div
           style={{
-            width: "40%",
+            flex: 7,
           }}
         >
           <p
             style={{
               fontSize: "24px",
+              marginBottom: "16px",
+              lineHeight: "17px",
             }}
           >
             Hello, I&apos;m
@@ -38,13 +42,16 @@ const Hero = () => {
           <h2
             style={{
               fontSize: "56px",
+              lineHeight: "56px",
             }}
           >
             Ibrahim Walid
           </h2>
           <h2
             style={{
-              fontSize: "56px",
+              fontSize: "53px",
+              lineHeight: "56px",
+              whiteSpace: "nowrap",
             }}
           >
             A Creative{" "}
@@ -65,6 +72,7 @@ const Hero = () => {
           <p
             style={{
               fontSize: "24px",
+              marginTop: "24px",
             }}
           >
             I&apos;m creative designer based in New York, and I&apos;m very
@@ -72,7 +80,7 @@ const Hero = () => {
           </p>
           <div
             style={{
-              margin: "30px 0",
+              margin: "40px 0",
             }}
           >
             <StyledFilledLink
@@ -101,7 +109,12 @@ const Hero = () => {
             </StyleLinksList>
           </div>
         </div>
-        <img src={heroImage} />
+        <img
+          src={heroImage}
+          style={{
+            flex: 5,
+          }}
+        />
       </section>
       <a
         href="#"

@@ -51,18 +51,27 @@ export const StyledFilledLink = styled("a")({
   fontSize: "1rem",
   borderRadius: "32px",
   textTransform: "none",
+  "&:hover": {
+    background:
+      "linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",
+  },
 });
 export const StyledOutlinedLink = styled("a")({
   padding: "8px 24px",
   margin: "0 10px",
   display: "inline-block",
   backgroundColor: "transparent",
-  border: "1px solid white",
+  outline: "1px solid white",
   color: "white",
   fontWeight: "600",
   fontSize: "1rem",
   borderRadius: "32px",
   textTransform: "none",
+  "&:hover": {
+    outline: "none",
+    background:
+      "linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",
+  },
 });
 
 export const StyledLanguageButton = styled(Button)({
