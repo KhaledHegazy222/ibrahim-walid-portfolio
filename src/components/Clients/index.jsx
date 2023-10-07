@@ -1,4 +1,4 @@
-import { StyledColoredTitle, StyledGraySubTitle } from "../About/About.styled";
+import { StyledColoredTitle, StyledSubTitle } from "../About/About.styled";
 import {
   StyledGridContainer,
   StyledGridItem,
@@ -17,10 +17,10 @@ const Clients = () => {
       <StyledColoredTitle margin="auto">
         What I Do for Clients
       </StyledColoredTitle>
-      <StyledGraySubTitle margin="auto" width="592px" textAlign="center">
+      <StyledSubTitle margin="auto" width="592px" textAlign="center">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
-      </StyledGraySubTitle>
+      </StyledSubTitle>
       <StyledGridContainer>
         <StyledGridItem>
           <img src={creative_design} alt="" />

@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, styled } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
 
 export const StyledNavList = styled("ul")({
   display: "flex",
@@ -25,18 +25,18 @@ export const StyledNavButton = styled("button")(({ selectedTag }) => ({
   },
 }));
 
-export const StyledGridContainer = styled(Grid)({
+export const StyledGridContainer = styled("div")({
+  display: "grid",
+  gridTemplate: "1fr / repeat(3,1fr)",
   placeContent: "center",
   gap: "30px",
 });
 
 export const StyledImageContainer = styled(Box)({
   position: "relative",
-  height: "500px",
-  width: "400px",
-
+  aspectRatio: "1 / 1",
   cursor: "pointer",
-  borderRadius: "30px",
+  borderRadius: "12px",
   "&:hover": {
     "& p": {
       opacity: "1",
@@ -47,7 +47,6 @@ export const StyledImageContainer = styled(Box)({
 export const StyledImage = styled("img")({
   position: "absolute",
   inset: "0",
-
   width: "100%",
   height: "100%",
   margin: "auto",
@@ -60,15 +59,29 @@ export const StyledImageDescription = styled(Typography)({
   zIndex: "2",
   opacity: 0,
   color: "white",
-  transition: "all 500ms",
+  transition: "all 300ms",
   display: "flex",
   alignItems: "flex-end",
-  justifyContent: "center",
+  justifyContent: "flex-start",
+
   width: "100%",
   height: "100%",
   fontWeight: "600",
-  fontSize: "1.5rem",
   borderRadius: "inherit",
-  background: "linear-gradient(transparent 70%,#5a6e91)",
-  paddingBottom: "30px",
+  background:
+    "linear-gradient(0deg, #0B45B3 0%, #288BF0 20.79%, rgba(40, 139, 240, 0.00) 37.32%)",
+});
+
+export const StyledDescriptionTitle = styled(Typography)({
+  fontSize: "24px",
+  margin: "24px",
+  marginBottom: "22px",
+  lineHeight: "17px",
+  fontWeight: "700",
+});
+export const StyledDescriptionSubtitle = styled(Typography)({
+  fontSize: "20px",
+  margin: "15px 30px",
+  lineHeight: "14px",
+  fontWeight: "400",
 });

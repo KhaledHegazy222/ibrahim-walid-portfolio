@@ -7,8 +7,9 @@ export const StyledList = styled(List)({
   gap: "20px",
   flexWrap: "wrap",
   flex: "0",
-  maxWidth: "800px",
-  margin: "80px auto",
+  maxWidth: "850px",
+  margin: "auto",
+  marginTop: "80px",
 });
 export const StyledListItem = styled(ListItem)({
   width: "max-content",
@@ -19,6 +20,7 @@ export const StyledListItem = styled(ListItem)({
   alignItems: "center",
   boxShadow: "0px 0px 15px 0px #0000001F",
   transition: "all 300ms ease-in-out",
+  margin: "12px",
   "& > p": {
     fontWeight: "600",
     fontSize: "18px",

@@ -7,7 +7,12 @@ import { StyledList, StyledListItem } from "./Skills.styled";
 
 const Skills = () => {
   return (
-    <StyledSection>
+    <StyledSection
+      style={{
+        paddingBottom: "0",
+        marginBottom: "120px",
+      }}
+    >
       <StyledColoredTitle
         component="h4"
         style={{

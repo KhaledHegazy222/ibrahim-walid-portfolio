@@ -17,7 +17,10 @@ import {
   StyledGridContainer,
   StyledImageContainer,
   StyledImageDescription,
+  StyledDescriptionTitle,
+  StyledDescriptionSubtitle,
 } from "./Portfolio.styled";
+import { Box } from "@mui/material";
 
 const tagsList = [
   {
@@ -91,14 +94,21 @@ const Portfolio = () => {
           </StyledNavButton>
         ))}
       </StyledNavList>
-      <StyledGridContainer container>
+      <StyledGridContainer>
         {ImageList.filter((image) => {
           if (selectedTag === "*") return true;
           return image.tags.includes(selectedTag);
         }).map((image) => (
           <StyledImageContainer key={image.title}>
             <StyledImage src={image.image} />
-            <StyledImageDescription>{image.title} </StyledImageDescription>
+            <StyledImageDescription>
+              <Box>
+                <StyledDescriptionTitle>{image.title}</StyledDescriptionTitle>
+                <StyledDescriptionSubtitle>
+                  {image.title}
+                </StyledDescriptionSubtitle>
+              </Box>
+            </StyledImageDescription>
           </StyledImageContainer>
         ))}
       </StyledGridContainer>

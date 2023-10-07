@@ -7,9 +7,10 @@ export const StyledSection = styled(DefaultStyledSection)({
 });
 
 export const StyledGridContainer = styled("ul")({
-  padding: "60px 0",
+  padding: "0",
+  marginTop: "80px",
   display: "grid",
-  gridTemplate: "1fr / repeat(auto-fit,585px)",
+  gridTemplate: "1fr / repeat(2,1fr)",
   gap: "30px",
   justifyContent: "center",
   alignContent: "center",
@@ -17,24 +18,25 @@ export const StyledGridContainer = styled("ul")({
   alignItems: "center",
 });
 export const StyledGridItem = styled("li")({
+  aspectRatio: "207 / 100",
   display: "flex",
   alignItems: "flex-start",
-  gap: "30px",
+  gap: "24px",
   background: "white",
   borderRadius: "8px",
-  padding: "30px",
+  padding: "54px 78px",
 
   "& h5": {
     fontSize: "24px",
     fontWeight: "700",
-    padding: "10px 0",
   },
-
+  "& p": {
+    margin: "24px 0",
+  },
   "& a": {
     color: "#0B45B3",
     fontWeight: "500",
     fontSize: "1rem",
-    padding: "10px 0",
     display: "flex",
     alignItems: "center",
     gap: "10px",

@@ -20,12 +20,16 @@ export const StyledColoredTitle = styled(Typography)({
   fontSize: "24px",
   padding: "20px 0",
 });
-export const StyledGraySubTitle = styled(Typography)({
+
+export const StyledSubTitle = styled(Typography)({
   fontSize: "18px",
   fontWeight: "400",
-  color: "#7A7A7A",
+  color: "white",
 });
 
+export const StyledGraySubTitle = styled(StyledSubTitle)({
+  color: "#7A7A7A",
+});
 export const StyledTitle = styled(Typography)({
   fontSize: "48px",
   fontWeight: "700",

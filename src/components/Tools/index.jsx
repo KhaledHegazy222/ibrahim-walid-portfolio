@@ -15,7 +15,12 @@ import trello_image from "../../assets/tools/trello.png";
 
 const Tools = () => {
   return (
-    <StyledSection>
+    <StyledSection
+      style={{
+        paddingTop: 0,
+        marginTop: "120px",
+      }}
+    >
       <StyledColoredTitle margin="auto">Tools</StyledColoredTitle>
       <StyledGraySubTitle textAlign="center" width="592px" margin="auto">
         Most common methods for designing websites that work well on desktop is
