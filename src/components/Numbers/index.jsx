@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { StyledSection } from "../About/About.styled";
 import {
   StyledContent,
@@ -6,7 +7,29 @@ import {
   StyledTitle,
 } from "./Numbers.styled";
 
+let intervalId;
+
+const MaxExpYears = 3;
+const MaxProjects = 15;
+const MaxClients = 150;
+const MaxReviews = 240;
+
 const Numbers = () => {
+  const [percentage, setPercentage] = useState(0);
+  const initTimer = () => {
+    intervalId = setInterval(() => {
+      setPercentage((prev) => Math.min(100, prev + 1));
+    }, 15);
+  };
+  useEffect(() => {
+    initTimer();
+    return () => clearInterval(intervalId);
+  }, []);
+  useEffect(() => {
+    if (percentage === 100) {
+      clearInterval(intervalId);
+    }
+  }, [percentage]);
   return (
     <StyledSection
       style={{
@@ -19,19 +42,27 @@ const Numbers = () => {
     >
       <StyledGridContainer container>
         <StyledSummaryElement item>
-          <StyledTitle component="h4">+3</StyledTitle>
+          <StyledTitle component="h4">
+            +{Math.round((MaxExpYears * percentage) / 100)}
+          </StyledTitle>
           <StyledContent component="p">Years Experience</StyledContent>
         </StyledSummaryElement>
         <StyledSummaryElement item>
-          <StyledTitle component="h4">+15</StyledTitle>
+          <StyledTitle component="h4">
+            +{Math.round((MaxProjects * percentage) / 100)}
+          </StyledTitle>
           <StyledContent component="p">Projects Done</StyledContent>
         </StyledSummaryElement>
         <StyledSummaryElement item>
-          <StyledTitle component="h4">+150</StyledTitle>
+          <StyledTitle component="h4">
+            +{Math.round((MaxClients * percentage) / 100)}
+          </StyledTitle>
           <StyledContent component="p">Happy Clients</StyledContent>
         </StyledSummaryElement>
         <StyledSummaryElement item>
-          <StyledTitle component="h4">+240</StyledTitle>
+          <StyledTitle component="h4">
+            +{Math.round((MaxReviews * percentage) / 100)}
+          </StyledTitle>
           <StyledContent component="p">Good Reviews</StyledContent>
         </StyledSummaryElement>
       </StyledGridContainer>
