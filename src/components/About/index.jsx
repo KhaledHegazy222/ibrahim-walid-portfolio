@@ -1,15 +1,24 @@
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import aboutImage from "../../assets/about.svg";
+import aboutBorderImage from "../../assets/aboutBorder.svg";
 import { StyledFilledLink } from "../Navbar/Navbar.styled";
+import WhatsAppOutlined from "../../assets/whatsappOutlined.svg";
 import {
   StyledColoredTitle,
   StyledContent,
   StyledParagraph,
   StyledSection,
   StyledTitle,
+  StyledZoomedOutImage,
 } from "./About.styled";
+import ScrollTrigger from "react-scroll-trigger";
+import { useState } from "react";
 
 const About = () => {
+  const [zoomIn, setZoomIn] = useState(false);
+  const handleEnter = () => {
+    setZoomIn(true);
+  };
   return (
     <StyledSection>
       <Box
@@ -21,11 +30,35 @@ const About = () => {
           },
         }}
       >
-        <Grid container>
-          <Grid item xs={10}>
-            <img src={aboutImage} />
-          </Grid>
-        </Grid>
+        <Box
+          sx={{
+            alignSelf: "stretch",
+          }}
+        >
+          <ScrollTrigger onEnter={handleEnter}>
+            <Box
+              sx={{
+                width: "480px",
+                height: "480px",
+                position: "relative",
+              }}
+            >
+              <StyledZoomedOutImage
+                src={aboutBorderImage}
+                zoomIn={zoomIn}
+                style={{ maxWidth: "unset", width: "100%", height: "100%" }}
+              />
+              <StyledZoomedOutImage
+                src={aboutImage}
+                zoomIn={true}
+                style={{
+                  top: "48%",
+                  left: "48%",
+                }}
+              />
+            </Box>
+          </ScrollTrigger>
+        </Box>
         <StyledContent>
           <StyledColoredTitle
             style={{
@@ -55,9 +88,15 @@ const About = () => {
             style={{
               marginLeft: "0",
               fontSize: "18px",
+              padding: "14px 40px",
+              margin: "0 10px",
+              display: "inline-flex",
+              alignItems: "center",
+              width: "fit-content",
+              gap: "8px",
             }}
           >
-            Get a free consultation now
+            <img src={WhatsAppOutlined} /> Get a free consultation now
           </StyledFilledLink>
         </StyledContent>
       </Box>

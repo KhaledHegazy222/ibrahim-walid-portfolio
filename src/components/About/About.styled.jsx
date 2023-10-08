@@ -43,3 +43,14 @@ export const StyledParagraph = styled(Typography)({
   fontWeight: "400",
   color: "#7A7A7A",
 });
+
+export const StyledZoomedOutImage = styled("img")(({ zoomIn }) => ({
+  position: "absolute",
+  aspectRatio: "1 / 1",
+  maxWidth: "400px",
+  transition: "all 400ms",
+  transitionDelay: "700ms",
+  top: "50%",
+  left: "50%",
+  transform: `translate(-50%,-50%) ${zoomIn ? "scale(1)" : "scale(1.3)"}`,
+}));
