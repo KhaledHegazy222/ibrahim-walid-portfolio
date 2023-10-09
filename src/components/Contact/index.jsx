@@ -1,7 +1,7 @@
 import {
   StyledColoredTitle,
-  StyledGraySubTitle,
   StyledSection,
+  StyledSubTitle,
 } from "../About/About.styled";
 
 import phone_image from "../../assets/contact/phone.png";
@@ -26,12 +26,25 @@ const Contact = () => {
           "linear-gradient(54.59deg, #00387A 5.04%, #001227 62.83%, #001227 62.83%)",
       }}
     >
-      <StyledColoredTitle margin="auto">Contact</StyledColoredTitle>
-      <StyledGraySubTitle textAlign="center">
+      <StyledColoredTitle
+        style={{
+          paddingBottom: "0",
+          lineHeight: "23px",
+          margin: "16px auto",
+        }}
+      >
+        Contact
+      </StyledColoredTitle>
+      <StyledSubTitle textAlign="center">
         I want to hear from you
-      </StyledGraySubTitle>
+      </StyledSubTitle>
       <StyledContent>
-        <List>
+        <List
+          sx={{
+            padding: "0",
+            margin: "0",
+          }}
+        >
           <StyledListItem>
             <img src={phone_image} alt="" />
             <div
@@ -71,6 +84,7 @@ const Contact = () => {
             <StyledOneLineInput type="text" placeholder="Your name" />
             <StyledOneLineInput type="email" placeholder="Your email" />
             <StyledMultiLineInput type="text" placeholder="Your message" />
+              
             <StyledSubmitButton type="submit" variant="contained">
               Send Message
             </StyledSubmitButton>

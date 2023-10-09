@@ -7,8 +7,9 @@ import behanceIcon from "../../assets/behance.png";
 import twitterIcon from "../../assets/twitter.png";
 
 import { StyledFilledLink, StyledOutlinedLink } from "../Navbar/Navbar.styled";
-import { StyleLinksList } from "./Hero.styled";
+import { StyleLinksList, StyledWhatsappLink } from "./Hero.styled";
 import ParticlesBackground from "../ParticlesBackground";
+import { Typography } from "@mui/material";
 const Hero = () => {
   return (
     <>
@@ -116,15 +117,7 @@ const Hero = () => {
           }}
         />
       </section>
-      <a
-        href="#"
-        style={{
-          position: "fixed",
-          zIndex: "4",
-          right: "20px",
-          bottom: "20px",
-        }}
-      >
+      <StyledWhatsappLink href="#" style={{}}>
         <img
           src={whatsappIcon}
           style={{
@@ -132,7 +125,8 @@ const Hero = () => {
             padding: "0",
           }}
         />
-      </a>
+        <Typography>Get a free consultation now</Typography>
+      </StyledWhatsappLink>
     </>
   );
 };

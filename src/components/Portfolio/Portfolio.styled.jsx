@@ -9,20 +9,20 @@ export const StyledNavList = styled("ul")({
 export const StyledNavButton = styled("button")(({ selectedTag }) => ({
   flexGrow: "0",
   flexShrink: "0",
-  background: selectedTag
-    ? "linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)"
-    : "transparent",
-  color: selectedTag ? "white" : "rgba(40, 139, 240, 0.75)",
-  fontSize: "18px",
-  fontWeight: "500",
-  borderRadius: "100px",
   border: "none",
+  outline: !selectedTag && "1px solid #0B45B3",
+  background: "linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",
+  WebkitBackgroundClip: !selectedTag && "text",
+  WebkitTextFillColor: !selectedTag && "transparent",
+
+  color: selectedTag ? "white" : "#288BF0",
+  fontSize: "18px",
+  fontWeight: selectedTag ? "600" : "400",
+  borderRadius: "100px",
   whiteSpace: "nowrap",
   padding: "5px 15px",
   cursor: "pointer",
-  "&:hover": {
-    outline: !selectedTag && "1px solid rgba(40, 139, 240, 0.75)",
-  },
+  "&:hover": {},
 }));
 
 export const StyledGridContainer = styled("div")({
