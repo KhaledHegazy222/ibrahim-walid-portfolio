@@ -7,9 +7,10 @@ export const StyledFooter = styled("footer")({
   height: "80px",
   alignItems: "center",
   justifyContent: "space-between",
-  padding: "0 50px",
+  padding: "20px 80px",
+  paddingLeft: "120px",
   position: "relative",
-  zIndex: "5",
+  zIndex: "2",
 });
 
 export const StyledCopyrights = styled(Typography)({
@@ -18,4 +19,11 @@ export const StyledCopyrights = styled(Typography)({
 
 export const StyledList = styled(List)({
   display: "inline-flex",
+  padding: 0,
+  margin: 0,
+  gap: "24px",
+  "& *": {
+    margin: 0,
+    padding: 0,
+  },
 });

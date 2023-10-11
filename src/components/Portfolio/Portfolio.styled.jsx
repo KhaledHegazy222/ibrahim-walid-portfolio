@@ -15,14 +15,19 @@ export const StyledNavButton = styled("button")(({ selectedTag }) => ({
   WebkitBackgroundClip: !selectedTag && "text",
   WebkitTextFillColor: !selectedTag && "transparent",
 
-  color: selectedTag ? "white" : "#288BF0",
+  color: selectedTag ? "white" : "#0f4ebb",
   fontSize: "18px",
   fontWeight: selectedTag ? "600" : "400",
   borderRadius: "100px",
   whiteSpace: "nowrap",
   padding: "5px 15px",
   cursor: "pointer",
-  "&:hover": {},
+
+  "&:hover": !selectedTag && {
+    background: "#eee",
+    WebkitBackgroundClip: "unset",
+    WebkitTextFillColor: "unset",
+  },
 }));
 
 export const StyledGridContainer = styled("div")({

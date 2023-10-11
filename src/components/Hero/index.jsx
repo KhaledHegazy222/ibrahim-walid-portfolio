@@ -1,10 +1,14 @@
 import Typed from "react-typed";
 
 import heroImage from "../../assets/hero.png";
+import whatsappGreenIcon from "../../assets/whatsappGreen.svg";
+
+import facebookIcon from "../../assets/facebook.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
+import behanceIcon from "../../assets/behance.svg";
+import twitterIcon from "../../assets/twitter.svg";
+import telegramIcon from "../../assets/telegram.svg";
 import whatsappIcon from "../../assets/whatsapp.svg";
-import linkedinIcon from "../../assets/linkedin.png";
-import behanceIcon from "../../assets/behance.png";
-import twitterIcon from "../../assets/twitter.png";
 
 import { StyledFilledLink, StyledOutlinedLink } from "../Navbar/Navbar.styled";
 import { StyleLinksList, StyledWhatsappLink } from "./Hero.styled";
@@ -99,13 +103,22 @@ const Hero = () => {
           <div>
             <StyleLinksList>
               <li>
-                <img src={linkedinIcon} alt="" />
+                <img src={facebookIcon} alt="" />
               </li>
               <li>
                 <img src={behanceIcon} alt="" />
               </li>
               <li>
+                <img src={linkedinIcon} alt="" />
+              </li>
+              <li>
                 <img src={twitterIcon} alt="" />
+              </li>
+              <li>
+                <img src={telegramIcon} alt="" />
+              </li>
+              <li>
+                <img src={whatsappIcon} alt="" />
               </li>
             </StyleLinksList>
           </div>
@@ -119,7 +132,7 @@ const Hero = () => {
       </section>
       <StyledWhatsappLink href="#" style={{}}>
         <img
-          src={whatsappIcon}
+          src={whatsappGreenIcon}
           style={{
             margin: "0",
             padding: "0",

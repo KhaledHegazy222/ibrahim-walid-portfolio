@@ -1,11 +1,12 @@
 import { ListItem } from "@mui/material";
 import { StyledCopyrights, StyledFooter, StyledList } from "./Footer.styled";
 
-import behance_image from "../../assets/footer/behance.png";
-import facebook_image from "../../assets/footer/facebook.png";
-import linkedin_image from "../../assets/footer/linkedin.png";
-import twitter_image from "../../assets/footer/twitter.png";
-import whatsapp_image from "../../assets/footer/whatsapp.png";
+import facebookIcon from "../../assets/facebook.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
+import behanceIcon from "../../assets/behance.svg";
+import twitterIcon from "../../assets/twitter.svg";
+import telegramIcon from "../../assets/telegram.svg";
+import whatsappIcon from "../../assets/whatsapp.svg";
 
 const Footer = () => {
   return (
@@ -16,27 +17,32 @@ const Footer = () => {
       <StyledList>
         <ListItem>
           <a href="#">
-            <img src={behance_image} alt="" />
+            <img src={facebookIcon} alt="" />
           </a>
         </ListItem>
         <ListItem>
           <a href="#">
-            <img src={facebook_image} alt="" />
+            <img src={linkedinIcon} alt="" />
           </a>
         </ListItem>
         <ListItem>
           <a href="#">
-            <img src={linkedin_image} alt="" />
+            <img src={behanceIcon} alt="" />
           </a>
         </ListItem>
         <ListItem>
           <a href="#">
-            <img src={twitter_image} alt="" />
+            <img src={twitterIcon} alt="" />
           </a>
         </ListItem>
         <ListItem>
           <a href="#">
-            <img src={whatsapp_image} alt="" />
+            <img src={telegramIcon} alt="" />
+          </a>
+        </ListItem>
+        <ListItem>
+          <a href="#">
+            <img src={whatsappIcon} alt="" />
           </a>
         </ListItem>
       </StyledList>
