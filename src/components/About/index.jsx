@@ -61,7 +61,7 @@ const About = () => {
         </Box>
         <StyledContent>
           <StyledColoredTitle
-            style={{
+            sx={{
               fontSize: "24px",
               padding: "0",
               marginBottom: "40px",
@@ -72,7 +72,7 @@ const About = () => {
           <StyledTitle>I can design anything</StyledTitle>
           <StyledTitle>you want</StyledTitle>
           <StyledParagraph
-            style={{
+            sx={{
               margin: "40px 0",
             }}
           >

@@ -1,11 +1,12 @@
 import styled from "@emotion/styled";
 import { List } from "@mui/material";
 
-export const StyleLinksList = styled(List)({
+export const StyleLinksList = styled(List)(({ centered }) => ({
   margin: "20px 0",
   display: "flex",
   gap: "10px",
-});
+  justifyContent: centered ? "center" : "flex-start",
+}));
 
 export const StyledWhatsappLink = styled("a")({
   position: "fixed",
@@ -31,5 +32,25 @@ export const StyledWhatsappLink = styled("a")({
     top: "10px",
     right: "80px",
     opacity: 1,
+  },
+});
+
+export const StyledImage = styled("img")({
+  flex: 5,
+  width: "100%",
+  "@media screen and (width < 1400px)": {
+    flex: "unset",
+    width: "min(100%,500px)",
+    margin: "24px 0",
+  },
+});
+
+export const StyledTextSection = styled("div")({
+  flex: 7,
+  "@media screen and (width < 1400px)": {
+    flex: "unset",
+    "& *": {
+      textAlign: "center",
+    },
   },
 });

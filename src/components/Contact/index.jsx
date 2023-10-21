@@ -27,7 +27,7 @@ const Contact = () => {
       }}
     >
       <StyledColoredTitle
-        style={{
+        sx={{
           paddingBottom: "0",
           lineHeight: "23px",
           margin: "16px auto",
@@ -84,7 +84,7 @@ const Contact = () => {
             <StyledOneLineInput type="text" placeholder="Your name" />
             <StyledOneLineInput type="email" placeholder="Your email" />
             <StyledMultiLineInput type="text" placeholder="Your message" />
-              
+
             <StyledSubmitButton type="submit" variant="contained">
               Send Message
             </StyledSubmitButton>

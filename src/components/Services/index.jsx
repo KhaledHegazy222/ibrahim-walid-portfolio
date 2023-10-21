@@ -78,7 +78,7 @@ const Services = () => {
       >
         <StyledColoredTitle
           component="h4"
-          style={{
+          sx={{
             margin: "auto",
             padding: "4px 0px",
           }}
@@ -86,7 +86,7 @@ const Services = () => {
           Services
         </StyledColoredTitle>
         <StyledParagraph
-          style={{
+          sx={{
             padding: "4px",
           }}
         >

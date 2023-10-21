@@ -11,15 +11,23 @@ import telegramIcon from "../../assets/telegram.svg";
 import whatsappIcon from "../../assets/whatsapp.svg";
 
 import { StyledFilledLink, StyledOutlinedLink } from "../Navbar/Navbar.styled";
-import { StyleLinksList, StyledWhatsappLink } from "./Hero.styled";
+import {
+  StyleLinksList,
+  StyledImage,
+  StyledTextSection,
+  StyledWhatsappLink,
+} from "./Hero.styled";
 import ParticlesBackground from "../ParticlesBackground";
-import { Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 const Hero = () => {
+  const fullScreenDisplay = useMediaQuery("(width > 1400px)");
+
   return (
     <>
       <ParticlesBackground />
-      <section
-        style={{
+      <Box
+        component="section"
+        sx={{
           height: "100%",
           display: "flex",
           alignItems: "center",
@@ -28,35 +36,50 @@ const Hero = () => {
           zIndex: "2",
           padding: "120px",
           gap: "30px",
+          ...(!fullScreenDisplay && {
+            flexWrap: "wrap-reverse",
+            padding: "32px 16px ",
+          }),
         }}
       >
-        <div
-          style={{
-            flex: 7,
-          }}
-        >
-          <p
-            style={{
+        <StyledTextSection>
+          <Typography
+            sx={{
               fontSize: "24px",
               marginBottom: "16px",
               lineHeight: "17px",
+              fontWeight: "500",
+              ...(!fullScreenDisplay && {
+                fontSize: "14px",
+                lineHeight: "17px",
+              }),
             }}
           >
             Hello, I&apos;m
-          </p>
-          <h2
-            style={{
+          </Typography>
+          <Typography
+            sx={{
               fontSize: "56px",
               lineHeight: "56px",
+              fontWeight: "600",
+              ...(!fullScreenDisplay && {
+                fontSize: "24px",
+                lineHeight: "38.4px",
+              }),
             }}
           >
             Ibrahim Walid
-          </h2>
-          <h2
-            style={{
+          </Typography>
+          <Typography
+            sx={{
               fontSize: "53px",
               lineHeight: "56px",
               whiteSpace: "nowrap",
+              fontWeight: "600",
+              ...(!fullScreenDisplay && {
+                fontSize: "24px",
+                lineHeight: "38.4px",
+              }),
             }}
           >
             A Creative{" "}
@@ -73,16 +96,21 @@ const Hero = () => {
                 loop
               />
             </span>
-          </h2>
-          <p
-            style={{
+          </Typography>
+          <Typography
+            sx={{
               fontSize: "24px",
               marginTop: "24px",
+              ...(!fullScreenDisplay && {
+                fontSize: "14px",
+                lineHeight: "17px",
+                marginTop: "16px",
+              }),
             }}
           >
             I&apos;m creative designer based in New York, and I&apos;m very
             passionate and dedicated to my work
-          </p>
+          </Typography>
           <div
             style={{
               margin: "40px 0",
@@ -101,7 +129,7 @@ const Hero = () => {
             <StyledOutlinedLink href="#"> See Portfolio</StyledOutlinedLink>
           </div>
           <div>
-            <StyleLinksList>
+            <StyleLinksList centered={!fullScreenDisplay}>
               <li>
                 <img src={facebookIcon} alt="" />
               </li>
@@ -122,15 +150,10 @@ const Hero = () => {
               </li>
             </StyleLinksList>
           </div>
-        </div>
-        <img
-          src={heroImage}
-          style={{
-            flex: 5,
-          }}
-        />
-      </section>
-      <StyledWhatsappLink href="#" style={{}}>
+        </StyledTextSection>
+        <StyledImage src={heroImage} />
+      </Box>
+      <StyledWhatsappLink href="#">
         <img
           src={whatsappGreenIcon}
           style={{

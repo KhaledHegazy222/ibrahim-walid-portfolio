@@ -15,7 +15,7 @@ const Skills = () => {
     >
       <StyledColoredTitle
         component="h4"
-        style={{
+        sx={{
           margin: "auto",
           padding: "0",
         }}
@@ -23,7 +23,7 @@ const Skills = () => {
         Skills
       </StyledColoredTitle>
       <StyledParagraph
-        style={{
+        sx={{
           textAlign: "center",
           padding: "5px",
           width: "592px",
