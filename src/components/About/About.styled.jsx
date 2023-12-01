@@ -5,6 +5,9 @@ export const StyledSection = styled("section")({
   padding: "120px",
   position: "relative",
   zIndex: "3",
+  "@media screen and (width < 1400px)": {
+    padding: "30px 16px",
+  },
 });
 
 export const StyledContent = styled("div")({
@@ -35,7 +38,8 @@ export const StyledTitle = styled(Typography)({
   fontWeight: "700",
   textTransform: "capitalize",
   margin: "24px 0",
-  lineHeight: "34px",
+  lineHeight: "38.4px",
+  whiteSpace: "nowrap",
 });
 
 export const StyledParagraph = styled(Typography)({

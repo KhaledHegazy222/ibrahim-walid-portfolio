@@ -2,12 +2,19 @@ import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
 
 export const StyledGridContainer = styled("div")({
-  display: "grid",
-  gridTemplate: "1fr / repeat(4,1fr)",
+  display: "flex",
+  // gridTemplate: "1fr / repeat(4,minmax(250px,300px))",
   gap: "30px",
+  justifyContent: "center",
+  alignItems: "stretch",
+  flexWrap: "wrap",
+  // "@media (width < 1300px)": {
+  //   gridTemplate: "1fr / repeat(3,minmax(250px,300px))",
+  // },
 });
 
 export const StyledGridItem = styled(Grid)({
+  width: "min(100%,300px)",
   backgroundColor: "#f4f8fe",
   borderRadius: "8px",
   display: "flex",

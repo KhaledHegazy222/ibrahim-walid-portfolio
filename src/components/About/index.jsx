@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import aboutImage from "../../assets/about.svg";
 import aboutBorderImage from "../../assets/aboutBorder.svg";
 import { StyledFilledLink } from "../Navbar/Navbar.styled";
@@ -15,6 +15,7 @@ import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 
 const About = () => {
+  const fullScreenDisplay = useMediaQuery("(width > 1300px)");
   const [zoomIn, setZoomIn] = useState(false);
   const handleEnter = () => {
     setZoomIn(true);
@@ -28,6 +29,14 @@ const About = () => {
           "& > *": {
             flex: "1",
           },
+          ...(!fullScreenDisplay && {
+            flexWrap: "wrap",
+            justifyContent: "center",
+            "& > *": {
+              flex: "unset",
+              textAlign: "center",
+            },
+          }),
         }}
       >
         <Box
@@ -38,8 +47,8 @@ const About = () => {
           <ScrollTrigger onEnter={handleEnter}>
             <Box
               sx={{
-                width: "480px",
-                height: "480px",
+                width: "min(80vw,480px)",
+                height: "min(80vw,480px)",
                 position: "relative",
               }}
             >
@@ -52,8 +61,10 @@ const About = () => {
                 src={aboutImage}
                 zoomIn={true}
                 style={{
-                  top: "48%",
-                  left: "48%",
+                  top: "47%",
+                  left: "49%",
+                  width: "82%",
+                  height: "81%",
                 }}
               />
             </Box>
@@ -61,19 +72,45 @@ const About = () => {
         </Box>
         <StyledContent>
           <StyledColoredTitle
-            sx={{
+            style={{
               fontSize: "24px",
-              padding: "0",
               marginBottom: "40px",
+              paddingTop: 0,
+              paddingBottom: 0,
+              ...(!fullScreenDisplay && {
+                margin: "auto",
+                marginBottom: "16px",
+              }),
             }}
           >
             I&apos;m a Designer
           </StyledColoredTitle>
-          <StyledTitle>I can design anything</StyledTitle>
-          <StyledTitle>you want</StyledTitle>
+          <StyledTitle
+            style={{
+              ...(!fullScreenDisplay && {
+                fontSize: "24px",
+                margin: "16px 0",
+              }),
+            }}
+          >
+            I can design anything
+          </StyledTitle>
+          <StyledTitle
+            style={{
+              ...(!fullScreenDisplay && {
+                fontSize: "24px",
+                margin: "16px 0",
+              }),
+            }}
+          >
+            you want
+          </StyledTitle>
           <StyledParagraph
-            sx={{
+            style={{
               margin: "40px 0",
+              ...(!fullScreenDisplay && {
+                margin: "24px 0",
+              }),
             }}
           >
             Hello there! I&apos;m a web designer, and I&apos;m very passionate
@@ -87,8 +124,8 @@ const About = () => {
             href="#"
             style={{
               marginLeft: "0",
-              fontSize: "18px",
-              padding: "14px 40px",
+              fontSize: fullScreenDisplay ? "18px" : "14px",
+              padding: fullScreenDisplay ? "14px 40px" : "10px 40px",
               margin: "0 10px",
               display: "inline-flex",
               alignItems: "center",

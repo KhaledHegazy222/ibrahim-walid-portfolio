@@ -29,4 +29,10 @@ export const StyledListItem = styled(ListItem)({
   "&:hover": {
     transform: "scale(1.1)",
   },
+  "@media (width < 500px)": {
+    padding: "16px",
+    "& > p": {
+      display: "none",
+    },
+  },
 });

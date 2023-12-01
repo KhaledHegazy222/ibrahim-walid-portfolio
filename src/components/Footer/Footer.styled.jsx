@@ -20,8 +20,9 @@ export const StyledCopyrights = styled(Typography)({
 export const StyledList = styled(List)({
   display: "inline-flex",
   padding: 0,
+  paddingRight: "30px",
   margin: 0,
-  gap: "24px",
+  gap: "15px",
   "& *": {
     margin: 0,
     padding: 0,

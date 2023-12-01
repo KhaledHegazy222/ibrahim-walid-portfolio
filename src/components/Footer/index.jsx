@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <StyledFooter>
       <StyledCopyrights>
-        &copy; 2023 copyright all rights reserved
+        &copy; 2024 copyright all rights reserved
       </StyledCopyrights>
       <StyledList>
         <ListItem>

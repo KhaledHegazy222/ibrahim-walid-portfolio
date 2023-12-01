@@ -9,6 +9,7 @@ import creative_design from "../../assets/clients/creative_design.png";
 import graphic_design from "../../assets/clients/graphic_design.png";
 import ui_ux_design from "../../assets/clients/ui_ux_design.png";
 import web_design from "../../assets/clients/web_design.png";
+import WhatsappOutlined from "../../assets/WhatsappOutlined";
 import { ArrowForward } from "@mui/icons-material";
 
 const Clients = () => {
@@ -31,7 +32,8 @@ const Clients = () => {
               the internet. It usually refers to the user experience aspects of
               website development
             </p>
-            <a href="">
+            <a href="#">
+              <WhatsappOutlined />
               Contact us to know the details
               <ArrowForward
                 sx={{
@@ -50,7 +52,8 @@ const Clients = () => {
               the internet. It usually refers to the user experience aspects of
               website development
             </p>
-            <a href="">
+            <a href="#">
+              <WhatsappOutlined />
               Contact us to know the details{" "}
               <ArrowForward
                 sx={{
@@ -69,7 +72,8 @@ const Clients = () => {
               the internet. It usually refers to the user experience aspects of
               website development
             </p>
-            <a href="">
+            <a href="#">
+              <WhatsappOutlined />
               Contact us to know the details{" "}
               <ArrowForward
                 sx={{
@@ -88,7 +92,8 @@ const Clients = () => {
               the internet. It usually refers to the user experience aspects of
               website development
             </p>
-            <a href="">
+            <a href="#">
+              <WhatsappOutlined />
               Contact us to know the details{" "}
               <ArrowForward
                 sx={{

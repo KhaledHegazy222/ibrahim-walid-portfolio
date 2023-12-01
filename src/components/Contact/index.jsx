@@ -27,10 +27,11 @@ const Contact = () => {
       }}
     >
       <StyledColoredTitle
-        sx={{
-          paddingBottom: "0",
-          lineHeight: "23px",
-          margin: "16px auto",
+        style={{
+          padding: 0,
+          fontSize: "32px",
+          lineHeight: "32px",
+          margin: "10px auto",
         }}
       >
         Contact

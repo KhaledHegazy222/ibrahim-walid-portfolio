@@ -3,12 +3,11 @@ import { Box, Typography, styled } from "@mui/material";
 export const StyledNavList = styled("ul")({
   display: "flex",
   justifyContent: "center",
-  gap: "50px",
+  gap: "16px",
   padding: "50px 0",
+  flexWrap: "wrap",
 });
 export const StyledNavButton = styled("button")(({ selectedTag }) => ({
-  flexGrow: "0",
-  flexShrink: "0",
   border: "none",
   outline: !selectedTag && "1px solid #0B45B3",
   background: "linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",
@@ -17,10 +16,9 @@ export const StyledNavButton = styled("button")(({ selectedTag }) => ({
 
   color: selectedTag ? "white" : "#0f4ebb",
   fontSize: "18px",
-  fontWeight: selectedTag ? "600" : "400",
   borderRadius: "100px",
   whiteSpace: "nowrap",
-  padding: "5px 15px",
+  padding: "8px 24px",
   cursor: "pointer",
 
   "&:hover": !selectedTag && {

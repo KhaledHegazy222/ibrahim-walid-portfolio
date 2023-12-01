@@ -10,50 +10,73 @@ import {
 } from "./Navbar.styled";
 import logo from "../../assets/logo.svg";
 import languageIcon from "../../assets/language.svg";
-
+import menuIcon from "../../assets/menuIcon.svg";
+import { IconButton, useMediaQuery } from "@mui/material";
 const Navbar = () => {
+  const fullDisplay = useMediaQuery("(width > 1000px)");
+
   return (
     <StyledAppBar component="nav">
-      <StyledToolbar>
+      <StyledToolbar
+        style={{
+          ...(!fullDisplay && {
+            width: "auto",
+            margin: "8px",
+          }),
+        }}
+      >
         <StyledLogoContainer>
-          <img src={logo} />
-          <h3>Ibrahim Walid</h3>
+          <img
+            src={logo}
+            style={{
+              ...(!fullDisplay && {
+                width: "40%",
+              }),
+            }}
+          />
+          <h3>Ibrahim</h3>
         </StyledLogoContainer>
-        <StyledNavigationControls>
-          <StyledLinksList>
-            <StyledLinkElement>
-              <a
-                href="#"
-                style={{
-                  fontWeight: "700",
-                  color: "#45A0FF",
-                }}
-              >
-                Home
-              </a>
-            </StyledLinkElement>
-            <StyledLinkElement>
-              <a href="#">About</a>
-            </StyledLinkElement>
-            <StyledLinkElement>
-              <a href="#">Portfolio</a>
-            </StyledLinkElement>
-            <StyledLinkElement>
-              <a href="#">Services</a>
-            </StyledLinkElement>
-            <StyledLinkElement>
-              <a href="#">Blog</a>
-            </StyledLinkElement>
-            <StyledLinkElement>
-              <a href="#">Contact</a>
-            </StyledLinkElement>
-          </StyledLinksList>
-          <StyledFilledLink href="#">Download CV</StyledFilledLink>
-          <StyledLanguageButton>
-            <img src={languageIcon} />
-            <p>Ar</p>
-          </StyledLanguageButton>
-        </StyledNavigationControls>
+        {fullDisplay ? (
+          <StyledNavigationControls>
+            <StyledLinksList>
+              <StyledLinkElement>
+                <a
+                  href="#"
+                  style={{
+                    fontWeight: "700",
+                    color: "#45A0FF",
+                  }}
+                >
+                  Home
+                </a>
+              </StyledLinkElement>
+              <StyledLinkElement>
+                <a href="#">About</a>
+              </StyledLinkElement>
+              <StyledLinkElement>
+                <a href="#">Portfolio</a>
+              </StyledLinkElement>
+              <StyledLinkElement>
+                <a href="#">Services</a>
+              </StyledLinkElement>
+              <StyledLinkElement>
+                <a href="#">Blog</a>
+              </StyledLinkElement>
+              <StyledLinkElement>
+                <a href="#">Contact</a>
+              </StyledLinkElement>
+            </StyledLinksList>
+            <StyledFilledLink href="#">Download CV</StyledFilledLink>
+            <StyledLanguageButton>
+              <img src={languageIcon} />
+              <p>Ar</p>
+            </StyledLanguageButton>
+          </StyledNavigationControls>
+        ) : (
+          <IconButton>
+            <img src={menuIcon} />
+          </IconButton>
+        )}
       </StyledToolbar>
     </StyledAppBar>
   );

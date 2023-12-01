@@ -16,16 +16,20 @@ export const StyledGridContainer = styled("ul")({
   alignContent: "center",
   justifyItems: "center",
   alignItems: "center",
+  "@media (width < 900px)": {
+    gridTemplate: "1fr / 1fr",
+  },
 });
 export const StyledGridItem = styled("li")({
-  aspectRatio: "207 / 100",
   display: "flex",
   alignItems: "flex-start",
   gap: "24px",
   background: "white",
   borderRadius: "8px",
   padding: "54px 78px",
-
+  "& img": {
+    opacity: "2",
+  },
   "& h5": {
     fontSize: "24px",
     fontWeight: "700",
@@ -33,8 +37,9 @@ export const StyledGridItem = styled("li")({
   "& p": {
     margin: "24px 0",
   },
-  "& a": {
+  "& a, & a svg": {
     color: "#0B45B3",
+    fill: "#0B45B3",
     fontWeight: "500",
     fontSize: "1rem",
     display: "flex",
@@ -44,8 +49,27 @@ export const StyledGridItem = styled("li")({
   "&:hover": {
     background: "linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",
     color: "white",
-    "& a": {
+    fill: "white",
+    "& a, & a svg": {
       color: "inherit",
+      fill: "inherit",
+    },
+  },
+  "@media (width < 1300px)": {
+    padding: "54px 48px",
+  },
+  "@media (width < 1000px)": {
+    padding: "34px 28px",
+  },
+  "@media (width < 650px)": {
+    flexDirection: "column",
+    alignItems: "center",
+    "& * ": {
+      textAlign: "center",
+      margin: "auto",
+    },
+    "& a": {
+      width: "fit-content",
     },
   },
 });

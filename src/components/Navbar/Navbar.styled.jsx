@@ -11,14 +11,16 @@ export const StyledAppBar = styled(AppBar)({
 });
 
 export const StyledToolbar = styled(Toolbar)({
-  width: "85%",
+  minWidth: "85%",
   margin: "auto",
   display: "flex",
+  justifyContent: "space-between",
 });
 
 export const StyledLogoContainer = styled("div")({
   display: "flex",
   alignItems: "center",
+  gap: "10px",
 });
 
 export const StyledNavigationControls = styled("div")({

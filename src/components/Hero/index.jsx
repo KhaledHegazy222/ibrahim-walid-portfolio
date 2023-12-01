@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <>
-      <ParticlesBackground />
+      {/* <ParticlesBackground /> */}
       <Box
         component="section"
         sx={{
@@ -36,6 +36,7 @@ const Hero = () => {
           zIndex: "2",
           padding: "120px",
           gap: "30px",
+          margin: "24px 0",
           ...(!fullScreenDisplay && {
             flexWrap: "wrap-reverse",
             padding: "32px 16px ",

@@ -71,7 +71,7 @@ const Services = () => {
       <Box
         sx={{
           textAlign: "center",
-          width: "520px",
+          maxWidth: "520px",
           margin: "auto",
           marginBottom: "80px",
         }}
@@ -100,7 +100,6 @@ const Services = () => {
             <StyledImage src={service.image} />
             <h5
               style={{
-                whiteSpace: "nowrap",
                 color: "#191919",
                 textAlign: "center",
                 leadingTrim: " both",
@@ -110,7 +109,6 @@ const Services = () => {
                 fontWeight: " 700",
                 marginBottom: "16px",
                 padding: "0",
-                height: "17px",
               }}
             >
               {service.title}
