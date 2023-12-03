@@ -1,15 +1,33 @@
-import { Box, Button, ListItem, styled } from "@mui/material";
+import { Box, Button, List, ListItem, styled } from "@mui/material";
 import { StyledColoredTitle } from "../About/About.styled";
 
 export const StyledContent = styled(Box)({
   marginTop: "80px",
   display: "flex",
   justifyContent: "space-between",
+  "@media (width < 750px)": {
+    flexDirection: "column",
+    alignItems: "center",
+  },
+});
+
+export const StyledList = styled(List)({
+  padding: "0",
+  margin: "0",
+  "@media (width < 750px)": {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    "& > *": {
+      marginBottom: "10px",
+    },
+  },
 });
 
 export const StyledListItem = styled(ListItem)({
   marginBottom: "40px",
   color: "white",
+  width: "fit-content",
 });
 
 export const StyledContactTitle = styled(StyledColoredTitle)({
@@ -18,7 +36,7 @@ export const StyledContactTitle = styled(StyledColoredTitle)({
 });
 
 export const StyledFormContainer = styled(Box)({
-  width: "600px",
+  width: "100%",
 });
 
 export const StyledOneLineInput = styled("input")({

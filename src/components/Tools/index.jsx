@@ -22,7 +22,7 @@ const Tools = () => {
       }}
     >
       <StyledColoredTitle margin="auto">Tools</StyledColoredTitle>
-      <StyledGraySubTitle textAlign="center" width="592px" margin="auto">
+      <StyledGraySubTitle textAlign="center" maxWidth="592px" margin="auto">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledGraySubTitle>

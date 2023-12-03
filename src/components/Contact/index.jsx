@@ -11,6 +11,7 @@ import {
   StyledContactTitle,
   StyledContent,
   StyledFormContainer,
+  StyledList,
   StyledListItem,
   StyledMultiLineInput,
   StyledOneLineInput,
@@ -40,12 +41,7 @@ const Contact = () => {
         I want to hear from you
       </StyledSubTitle>
       <StyledContent>
-        <List
-          sx={{
-            padding: "0",
-            margin: "0",
-          }}
-        >
+        <StyledList>
           <StyledListItem>
             <img src={phone_image} alt="" />
             <div
@@ -79,7 +75,7 @@ const Contact = () => {
               <p>Mansoura, Egypt</p>
             </div>
           </StyledListItem>
-        </List>
+        </StyledList>
         <StyledFormContainer>
           <form>
             <StyledOneLineInput type="text" placeholder="Your name" />

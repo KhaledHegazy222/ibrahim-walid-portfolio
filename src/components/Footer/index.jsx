@@ -1,5 +1,10 @@
 import { ListItem } from "@mui/material";
-import { StyledCopyrights, StyledFooter, StyledList } from "./Footer.styled";
+import {
+  StyledCopyrights,
+  StyledFooter,
+  StyledList,
+  StyledListItem,
+} from "./Footer.styled";
 
 import facebookIcon from "../../assets/facebook.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
@@ -15,36 +20,36 @@ const Footer = () => {
         &copy; 2024 copyright all rights reserved
       </StyledCopyrights>
       <StyledList>
-        <ListItem>
+        <StyledListItem>
           <a href="#">
             <img src={facebookIcon} alt="" />
           </a>
-        </ListItem>
-        <ListItem>
+        </StyledListItem>
+        <StyledListItem>
           <a href="#">
             <img src={linkedinIcon} alt="" />
           </a>
-        </ListItem>
-        <ListItem>
+        </StyledListItem>
+        <StyledListItem>
           <a href="#">
             <img src={behanceIcon} alt="" />
           </a>
-        </ListItem>
-        <ListItem>
+        </StyledListItem>
+        <StyledListItem>
           <a href="#">
             <img src={twitterIcon} alt="" />
           </a>
-        </ListItem>
-        <ListItem>
+        </StyledListItem>
+        <StyledListItem>
           <a href="#">
             <img src={telegramIcon} alt="" />
           </a>
-        </ListItem>
-        <ListItem>
+        </StyledListItem>
+        <StyledListItem>
           <a href="#">
             <img src={whatsappIcon} alt="" />
           </a>
-        </ListItem>
+        </StyledListItem>
       </StyledList>
     </StyledFooter>
   );

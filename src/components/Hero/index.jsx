@@ -154,7 +154,7 @@ const Hero = () => {
         </StyledTextSection>
         <StyledImage src={heroImage} />
       </Box>
-      <StyledWhatsappLink href="#">
+      {/* <StyledWhatsappLink href="#">
         <img
           src={whatsappGreenIcon}
           style={{
@@ -163,7 +163,7 @@ const Hero = () => {
           }}
         />
         <Typography>Get a free consultation now</Typography>
-      </StyledWhatsappLink>
+      </StyledWhatsappLink> */}
     </>
   );
 };

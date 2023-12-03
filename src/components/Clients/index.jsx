@@ -18,7 +18,7 @@ const Clients = () => {
       <StyledColoredTitle margin="auto">
         What I Do for Clients
       </StyledColoredTitle>
-      <StyledSubTitle margin="auto" width="592px" textAlign="center">
+      <StyledSubTitle margin="auto" maxWidth="592px" textAlign="center">
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledSubTitle>

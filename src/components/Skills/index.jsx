@@ -26,7 +26,7 @@ const Skills = () => {
         sx={{
           textAlign: "center",
           padding: "5px",
-          width: "592px",
+          maxWidth: "592px",
           margin: "auto",
         }}
       >

@@ -56,5 +56,5 @@ export const StyledZoomedOutImage = styled("img")(({ zoomIn }) => ({
   transitionDelay: "700ms",
   top: "50%",
   left: "50%",
-  transform: `translate(-50%,-50%) ${zoomIn ? "scale(1)" : "scale(1.3)"}`,
+  transform: `translate(-50%,-50%) ${zoomIn ? "scale(1)" : "scale(1.2)"}`,
 }));

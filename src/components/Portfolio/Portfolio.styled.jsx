@@ -33,6 +33,12 @@ export const StyledGridContainer = styled("div")({
   gridTemplate: "1fr / repeat(3,1fr)",
   placeContent: "center",
   gap: "30px",
+  "@media (width < 768px)": {
+    gridTemplate: "1fr / repeat(2,1fr)",
+  },
+  "@media (width < 500px)": {
+    gridTemplate: "1fr /1fr",
+  },
 });
 
 export const StyledImageContainer = styled(Box)({
@@ -77,14 +83,15 @@ export const StyledImageDescription = styled(Typography)({
 
 export const StyledDescriptionTitle = styled(Typography)({
   fontSize: "24px",
-  margin: "24px",
-  marginBottom: "22px",
+  margin: "25px",
+  marginLeft: "5%",
   lineHeight: "17px",
   fontWeight: "700",
 });
 export const StyledDescriptionSubtitle = styled(Typography)({
   fontSize: "20px",
-  margin: "15px 30px",
+  marginLeft: "7%",
+  marginBottom: "23px",
   lineHeight: "14px",
   fontWeight: "400",
 });
