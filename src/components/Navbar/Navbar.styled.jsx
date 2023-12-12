@@ -2,13 +2,13 @@ import styled from "@emotion/styled";
 
 import { AppBar, Button, List, ListItem, Toolbar } from "@mui/material";
 
-export const StyledAppBar = styled(AppBar)({
+export const StyledAppBar = styled(AppBar)(({ fixed }) => ({
   background:
     "linear-gradient(90deg, #00387A -41.84%, #001227 64.41%, #001227 64.41%)",
-  position: "fixed",
+  position: fixed ? "fixed" : "static",
   boxShadow: "none",
   zIndex: "4",
-});
+}));
 
 export const StyledToolbar = styled(Toolbar)({
   minWidth: "85%",

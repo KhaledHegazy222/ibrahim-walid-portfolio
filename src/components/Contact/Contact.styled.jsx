@@ -36,7 +36,7 @@ export const StyledContactTitle = styled(StyledColoredTitle)({
 });
 
 export const StyledFormContainer = styled(Box)({
-  width: "100%",
+  width: "600px",
 });
 
 export const StyledOneLineInput = styled("input")({

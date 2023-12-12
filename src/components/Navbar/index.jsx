@@ -12,11 +12,12 @@ import logo from "../../assets/logo.svg";
 import languageIcon from "../../assets/language.svg";
 import menuIcon from "../../assets/menuIcon.svg";
 import { IconButton, useMediaQuery } from "@mui/material";
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ fixed = true }) => {
   const fullDisplay = useMediaQuery("(width > 1000px)");
 
   return (
-    <StyledAppBar component="nav">
+    <StyledAppBar component="nav" fixed={fixed}>
       <StyledToolbar
         style={{
           ...(!fullDisplay && {

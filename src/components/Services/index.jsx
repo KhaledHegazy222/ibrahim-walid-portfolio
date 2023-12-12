@@ -17,44 +17,53 @@ import {
   StyledGridItem,
   StyledImage,
 } from "./Services.styled";
+import { Link } from "react-router-dom";
 
 const servicesList = [
   {
+    path: "ui-design",
     title: "UI Design",
     content: "Most common methods for designing websites that",
     image: ui_design_image,
   },
   {
+    path: "ui-design",
     title: "UX Design",
     content: "Most common methods for designing websites that",
     image: ux_design_image,
   },
   {
+    path: "ui-design",
     title: "Social Media Designs",
     content: "Most common methods for designing websites that",
     image: social_media_design_image,
   },
   {
+    path: "ui-design",
     title: "Logo Design",
     content: "Most common methods for designing websites that",
     image: logo_design_image,
   },
   {
+    path: "ui-design",
     title: "Mobile App Design",
     content: "Most common methods for designing websites that",
     image: mobile_app_design_image,
   },
   {
+    path: "ui-design",
     title: "Web Design",
     content: "Most common methods for designing websites that",
     image: web_design_image,
   },
   {
+    path: "ui-design",
     title: "Graphic Design",
     content: "Most common methods for designing websites that",
     image: graphic_design_image,
   },
   {
+    path: "ui-design",
     title: "Identy Design",
     content: "Most common methods for designing websites that",
     image: identity_design_image,
@@ -96,38 +105,40 @@ const Services = () => {
       </Box>
       <StyledGridContainer>
         {servicesList.map((service, index) => (
-          <StyledGridItem key={index}>
-            <StyledImage src={service.image} />
-            <h5
-              style={{
-                color: "#191919",
-                textAlign: "center",
-                leadingTrim: " both",
-                textEdge: " cap",
-                fontSize: " 24px",
-                fontStyle: " normal",
-                fontWeight: " 700",
-                marginBottom: "16px",
-                padding: "0",
-              }}
-            >
-              {service.title}
-            </h5>
-            <p
-              style={{
-                color: "#4D4D4D",
-                textAlign: "center",
-                leadingTrim: "both",
-                textEdge: "cap",
-                fontSize: "16px",
-                fontStyle: "normal",
-                fontWeight: "400",
-                lineHeight: "140%",
-              }}
-            >
-              {service.content}
-            </p>
-          </StyledGridItem>
+          <Link to={service.path} key={index}>
+            <StyledGridItem>
+              <StyledImage src={service.image} />
+              <h5
+                style={{
+                  color: "#191919",
+                  textAlign: "center",
+                  leadingTrim: " both",
+                  textEdge: " cap",
+                  fontSize: " 24px",
+                  fontStyle: " normal",
+                  fontWeight: " 700",
+                  marginBottom: "16px",
+                  padding: "0",
+                }}
+              >
+                {service.title}
+              </h5>
+              <p
+                style={{
+                  color: "#4D4D4D",
+                  textAlign: "center",
+                  leadingTrim: "both",
+                  textEdge: "cap",
+                  fontSize: "16px",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  lineHeight: "140%",
+                }}
+              >
+                {service.content}
+              </p>
+            </StyledGridItem>
+          </Link>
         ))}
       </StyledGridContainer>
     </StyledSection>
