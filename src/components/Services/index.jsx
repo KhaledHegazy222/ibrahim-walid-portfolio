@@ -21,49 +21,49 @@ import { Link } from "react-router-dom";
 
 const servicesList = [
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "UI Design",
     content: "Most common methods for designing websites that",
     image: ui_design_image,
   },
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "UX Design",
     content: "Most common methods for designing websites that",
     image: ux_design_image,
   },
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "Social Media Designs",
     content: "Most common methods for designing websites that",
     image: social_media_design_image,
   },
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "Logo Design",
     content: "Most common methods for designing websites that",
     image: logo_design_image,
   },
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "Mobile App Design",
     content: "Most common methods for designing websites that",
     image: mobile_app_design_image,
   },
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "Web Design",
     content: "Most common methods for designing websites that",
     image: web_design_image,
   },
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "Graphic Design",
     content: "Most common methods for designing websites that",
     image: graphic_design_image,
   },
   {
-    path: "ui-design",
+    path: "/ui-design",
     title: "Identy Design",
     content: "Most common methods for designing websites that",
     image: identity_design_image,

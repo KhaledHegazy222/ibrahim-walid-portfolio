@@ -23,7 +23,7 @@ export const StyledMiddleCard = styled(Box)({
       transform: "translateX(-120%) scale(0.8)",
     },
     to: {
-      transform: "translateX(0) scale(1.05)",
+      transform: "translateX(calc(50%-500px)) scale(1)",
     },
   },
   animation: "ShowMiddle 2s ease",
@@ -34,7 +34,7 @@ export const StyledRightCard = styled(Box)({
   opacity: 1,
   "@keyframes ShowRight": {
     from: {
-      transform: "translateX(0) scale(1.05)",
+      transform: "translateX(calc(50%-500px)) scale(1)",
     },
     to: {
       transform: "translateX(120%) scale(0.8)",
@@ -63,7 +63,7 @@ export const StyledHiddenCard = styled(Box)({
 export const StyledCardBody = styled(Box)({
   background: "linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",
   width: "1000px",
-  height: "355px",
+  minHeight: "355px",
   borderRadius: "16px",
   display: "flex",
   justifyContent: "center",
@@ -71,6 +71,14 @@ export const StyledCardBody = styled(Box)({
   gap: "30px",
   padding: "40px",
   color: "white",
+  "@media (width < 1050px)": {
+    display: "block",
+    width: "350px",
+    padding: "24px 16px",
+    "& *": {
+      textAlign: "center",
+    },
+  },
 });
 
 export const StyledCardTitle = styled(Typography)({

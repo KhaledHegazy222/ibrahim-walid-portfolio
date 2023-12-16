@@ -12,6 +12,7 @@ import logo from "../../assets/logo.svg";
 import languageIcon from "../../assets/language.svg";
 import menuIcon from "../../assets/menuIcon.svg";
 import { IconButton, useMediaQuery } from "@mui/material";
+import { Link } from "react-router-dom";
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ fixed = true }) => {
   const fullDisplay = useMediaQuery("(width > 1000px)");
@@ -26,17 +27,24 @@ const Navbar = ({ fixed = true }) => {
           }),
         }}
       >
-        <StyledLogoContainer>
-          <img
-            src={logo}
-            style={{
-              ...(!fullDisplay && {
-                width: "40%",
-              }),
-            }}
-          />
-          <h3>Ibrahim</h3>
-        </StyledLogoContainer>
+        <Link
+          to="/"
+          style={{
+            color: "white",
+          }}
+        >
+          <StyledLogoContainer>
+            <img
+              src={logo}
+              style={{
+                ...(!fullDisplay && {
+                  width: "40%",
+                }),
+              }}
+            />
+            <h3>Ibrahim</h3>
+          </StyledLogoContainer>
+        </Link>
         {fullDisplay ? (
           <StyledNavigationControls>
             <StyledLinksList>

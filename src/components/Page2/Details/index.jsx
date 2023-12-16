@@ -3,6 +3,7 @@ import details1 from "../../../assets/details1.svg";
 import details2 from "../../../assets/details2.svg";
 import details3 from "../../../assets/details3.svg";
 import { Box, List, ListItem } from "@mui/material";
+import { useEffect } from "react";
 const detailsList = [
   {
     image: details1,
@@ -25,6 +26,9 @@ const detailsList = [
 
 // eslint-disable-next-line react/prop-types
 const Details = ({ title, content }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Box
       sx={{

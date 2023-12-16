@@ -10,7 +10,7 @@ import Numbers from "./components/Numbers";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
-// import Testimonials from "./components/Testimonials";
+import Testimonials from "./components/Testimonials";
 import Tools from "./components/Tools";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
@@ -40,7 +40,7 @@ function App() {
                 <Extras />
                 <Portfolio />
                 <Services />
-                {/* <Testimonials /> */}
+                <Testimonials />
                 <Footer />
               </>
             }
@@ -61,8 +61,8 @@ function App() {
                   <Tools />
                   <Portfolio />
                   <Clients />
-                  {/* <Testimonials /> */}
-                  <Contact />
+                  <Testimonials />
+                  {/* <Contact /> */}
                 </main>
                 <Footer />
               </>
