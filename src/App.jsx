@@ -62,7 +62,7 @@ function App() {
                   <Portfolio />
                   <Clients />
                   <Testimonials />
-                  <div style={{ display:"none"}}>
+                  <div style={{ display:"none",color:"red"}}>
                     <Contact />
                   </div>
                 </main>
