@@ -17,20 +17,17 @@ import {
   StyledTextSection,
   StyledWhatsappLink,
 } from "./Hero.styled";
-import ParticlesBackground from "../ParticlesBackground";
+// import ParticlesBackground from "../ParticlesBackground";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 import contentData from "../../assets/content.json";
 const Hero = () => {
   const fullScreenDisplay = useMediaQuery("(width > 1400px)");
   const { language } = useLanguage();
-  console.log("WWWW", language);
   const content = contentData[language].hero;
-
-  console.log(content.description);
 
   return (
     <>
-      <ParticlesBackground />
+      {/* <ParticlesBackground /> */}
       <Box
         component="section"
         sx={{

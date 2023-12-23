@@ -18,6 +18,8 @@ import {
   StyledImage,
 } from "./Services.styled";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../contexts/LanguageContext";
+import contentData from "../../assets/content.json";
 
 const servicesList = [
   {
@@ -69,8 +71,9 @@ const servicesList = [
     image: identity_design_image,
   },
 ];
-
 const Services = () => {
+  const { language } = useLanguage();
+  const content = contentData[language].services;
   return (
     <StyledSection
       style={{
@@ -92,19 +95,18 @@ const Services = () => {
             padding: "4px 0px",
           }}
         >
-          Services
+          {content.title}
         </StyledColoredTitle>
         <StyledParagraph
           sx={{
             padding: "4px",
           }}
         >
-          Most common methods for designing websites that work well on desktop
-          is responsive and adaptive design
+          {content.description}
         </StyledParagraph>
       </Box>
       <StyledGridContainer>
-        {servicesList.map((service, index) => (
+        {content.services.map((service, index) => (
           <Link to={service.path} key={index}>
             <StyledGridItem>
               <StyledImage src={service.image} />
@@ -121,7 +123,7 @@ const Services = () => {
                   padding: "0",
                 }}
               >
-                {service.title}
+                {service.header}
               </h5>
               <p
                 style={{
@@ -135,7 +137,7 @@ const Services = () => {
                   lineHeight: "140%",
                 }}
               >
-                {service.content}
+                {service.description}
               </p>
             </StyledGridItem>
           </Link>

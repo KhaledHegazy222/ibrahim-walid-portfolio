@@ -9,7 +9,8 @@ import {
   StyledToolbar,
 } from "./Navbar.styled";
 import logo from "../../assets/logo.svg";
-import languageIcon from "../../assets/language.svg";
+import LanguageIcon from "@mui/icons-material/Language";
+// import languageIcon from "../../assets/language.svg";
 import menuIcon from "../../assets/menuIcon.svg";
 import { IconButton, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -46,12 +47,10 @@ const Navbar = ({ fixed = true }) => {
             <img
               src={logo}
               style={{
-                ...(!fullDisplay && {
-                  width: "40%",
-                }),
+                width: fullDisplay ? "40px" : "40%",
               }}
             />
-            <h3>{content.title}</h3>
+            <h3 style={{ fontSize: "2rem" }}>{content.title}</h3>
           </StyledLogoContainer>
         </Link>
         {fullDisplay ? (
@@ -72,7 +71,7 @@ const Navbar = ({ fixed = true }) => {
             </StyledLinksList>
             <StyledFilledLink href="#">{content.resume}</StyledFilledLink>
             <StyledLanguageButton onClick={changeLanguage}>
-              <img src={languageIcon} />
+              <LanguageIcon />
               <p>{language === "en" ? "ar" : "en"}</p>
             </StyledLanguageButton>
           </StyledNavigationControls>

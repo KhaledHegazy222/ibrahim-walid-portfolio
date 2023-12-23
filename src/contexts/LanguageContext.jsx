@@ -8,7 +8,6 @@ export const LanguageContextProvider = ({ children }) => {
 
   useEffect(() => {}, []);
   useEffect(() => {
-    console.log("AS", language);
     if (!language) {
       if (localStorage.getItem("language")) {
         setLanguage(localStorage.getItem("language"));

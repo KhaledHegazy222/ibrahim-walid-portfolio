@@ -42,6 +42,68 @@
       "header": "I Can Design Anything You Want",
       "content": "Hello there! I'm a web designer, and I'm very passionate and edicated to my work. With 20 years experience as a professional web eveloper, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.",
       "consultButton": "Get a free consultation now"
+    },
+    "services": {
+      "title": "Services",
+      "subTitle": "Most common methods for designing websites that work well on desktop is responsive and adaptive design",
+      "services": [
+        {
+          "image": "/src/assets/services/logo_design.png",
+          "header": "Logo Design",
+          "description": "Most common methods for designing websites",
+          "path": "/logo-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/social_media_design.png",
+          "header": "Social Media Designs",
+          "description": "Most common methods for designing websites",
+          "path": "/social-media-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/ux_design.png",
+          "header": "UX Design",
+          "description": "Most common methods for designing websites",
+          "path": "/ux-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/ui_design.png",
+          "header": "UI Design",
+          "description": "Most common methods for designing websites",
+          "path": "/ui-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/identity_design.png",
+          "header": "Identity Design",
+          "description": "Most common methods for designing websites",
+          "path": "/identity-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/graphic_design.png",
+          "header": "Graphic Design",
+          "description": "Most common methods for designing websites",
+          "path": "/graphic-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/web_design.png",
+          "header": "Web Design",
+          "description": "Most common methods for designing websites",
+          "path": "/web-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/mobile_app_design.png",
+          "header": "Mobile App Design",
+          "description": "Most common methods for designing websites",
+          "path": "/mobile-app-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        }
+      ]
     }
   },
   "ar": {
@@ -87,6 +149,68 @@
       "header": "يمكننى تصميم اى شيء تريده",
       "content": "اهلا بكم انا ابراهيم وليد مصمم تجربة وواجهة المستخدم ومصمم جرافيك  وصانع محتوي مصري وأسست هذا الموقع ليكون المكان المناسب للتواصل معي بطريقة احترافيه وتقديم خدامات تصميم احترافية ولا تتردد في التواصل معنا فنحن في خدم",
       "consultButton": "إحصل على استشارة مجانية الآن"
+    },
+    "services": {
+      "title": "Services",
+      "description": "Most common methods for designing websites that work well on desktop is responsive and adaptive design",
+      "services": [
+        {
+          "image": "/src/assets/services/logo_design.png",
+          "header": "Logo Design",
+          "description": "Most common methods for designing websites",
+          "path": "/logo-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/social_media_design.png",
+          "header": "Social Media Designs",
+          "description": "Most common methods for designing websites",
+          "path": "/social-media-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/ux_design.png",
+          "header": "UX Design",
+          "description": "Most common methods for designing websites",
+          "path": "/ux-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/ui_design.png",
+          "header": "UI Design",
+          "description": "Most common methods for designing websites",
+          "path": "/ui-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/identity_design.png",
+          "header": "Identity Design",
+          "description": "Most common methods for designing websites",
+          "path": "/identity-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/graphic_design.png",
+          "header": "Graphic Design",
+          "description": "Most common methods for designing websites",
+          "path": "/graphic-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/web_design.png",
+          "header": "Web Design",
+          "description": "Most common methods for designing websites",
+          "path": "/web-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        },
+        {
+          "image": "/src/assets/services/mobile_app_design.png",
+          "header": "Mobile App Design",
+          "description": "Most common methods for designing websites",
+          "path": "/mobile-app-design",
+          "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
+        }
+      ]
     }
   }
 }
