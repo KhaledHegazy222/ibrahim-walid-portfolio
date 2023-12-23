@@ -15,7 +15,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 
 const Clients = () => {
   const { language } = useLanguage();
-  const reverse = language === "ar";
+
   return (
     <StyledSection>
       <StyledColoredTitle margin="auto">
@@ -25,7 +25,7 @@ const Clients = () => {
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledSubTitle>
-      <StyledGridContainer reverse={reverse}>
+      <StyledGridContainer>
         <StyledGridItem>
           <img src={creative_design} alt="" />
           <div>

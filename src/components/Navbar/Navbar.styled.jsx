@@ -10,12 +10,12 @@ export const StyledAppBar = styled(AppBar)(({ fixed }) => ({
   zIndex: "4",
 }));
 
-export const StyledToolbar = styled(Toolbar)({
+export const StyledToolbar = styled(Toolbar)(() => ({
   minWidth: "85%",
   margin: "auto",
   display: "flex",
   justifyContent: "space-between",
-});
+}));
 
 export const StyledLogoContainer = styled("div")({
   display: "flex",
@@ -23,16 +23,16 @@ export const StyledLogoContainer = styled("div")({
   gap: "10px",
 });
 
-export const StyledNavigationControls = styled("div")({
+export const StyledNavigationControls = styled("div")(() => ({
   flex: "1",
   display: "flex",
   justifyContent: "flex-end",
   alignItems: "center",
-});
+}));
 
-export const StyledLinksList = styled(List)({
+export const StyledLinksList = styled(List)(() => ({
   display: "flex",
-});
+}));
 
 export const StyledLinkElement = styled(ListItem)({
   fontSize: "18px",

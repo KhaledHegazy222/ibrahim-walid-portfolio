@@ -6,31 +6,12 @@ export const StyledSection = styled(DefaultStyledSection)({
     "linear-gradient(54.59deg, #00387A 5.04%, #001227 62.83%, #001227 62.83%)",
 });
 
-export const StyledGridContainer = styled("ul")(({ reverse }) => ({
+export const StyledGridContainer = styled("ul")(() => ({
   padding: "0",
   marginTop: "80px",
   display: "grid",
   gridTemplateRows: "1fr",
   gridTemplateColumns: "repeat(2,1fr)",
-
-  ...(reverse && {
-    "& > :nth-child(1)": {
-      order: 2,
-    },
-    "& > :nth-child(2)": {
-      order: 1,
-    },
-    "& > :nth-child(3)": {
-      order: 4,
-    },
-    "& > :nth-child(4)": {
-      order: 3,
-    },
-    "& > *": {
-      flexDirection: "row-reverse",
-    },
-  }),
-
   gap: "30px",
   justifyContent: "center",
   alignContent: "center",

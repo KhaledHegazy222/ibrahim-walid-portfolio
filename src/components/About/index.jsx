@@ -14,10 +14,13 @@ import {
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
+import contentData from "../../assets/content.json";
+
 const About = () => {
   const fullScreenDisplay = useMediaQuery("(width > 1300px)");
   const { language } = useLanguage();
-  const reverse = language === "ar";
+  const content = contentData[language].about;
+
   const [zoomIn, setZoomIn] = useState(false);
   const handleEnter = () => {
     setZoomIn(true);
@@ -27,7 +30,6 @@ const About = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: reverse ? "row-reverse" : "row",
           alignItems: "flex-start",
           "& > *": {
             flex: "1",
@@ -86,7 +88,7 @@ const About = () => {
               }),
             }}
           >
-            I&apos;m a Designer
+            {content.subHeader}
           </StyledColoredTitle>
           <StyledTitle
             style={{
@@ -96,18 +98,9 @@ const About = () => {
               }),
             }}
           >
-            I can design anything
+            {content.header}
           </StyledTitle>
-          <StyledTitle
-            style={{
-              ...(!fullScreenDisplay && {
-                fontSize: "24px",
-                margin: "16px 0",
-              }),
-            }}
-          >
-            you want
-          </StyledTitle>
+
           <StyledParagraph
             style={{
               margin: "40px 0",
@@ -116,11 +109,7 @@ const About = () => {
               }),
             }}
           >
-            Hello there! I&apos;m a web designer, and I&apos;m very passionate
-            and dedicated to my work. With 20 years experience as a professional
-            web developer, I have acquired the skills and knowledge necessary to
-            make your project a success. I enjoy every step of the design
-            process, from discussion and collaboration.
+            {content.content}
           </StyledParagraph>
 
           <StyledFilledLink
@@ -136,7 +125,7 @@ const About = () => {
               gap: "8px",
             }}
           >
-            <img src={WhatsAppOutlined} /> Get a free consultation now
+            <img src={WhatsAppOutlined} /> {content.consultButton}
           </StyledFilledLink>
         </StyledContent>
       </Box>

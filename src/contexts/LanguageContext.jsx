@@ -4,21 +4,27 @@ const LanguageContext = createContext(null);
 
 // eslint-disable-next-line react/prop-types
 export const LanguageContextProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("");
 
+  useEffect(() => {}, []);
   useEffect(() => {
-    if (localStorage.getItem("language")) {
-      setLanguage(localStorage.getItem("language"));
-    }
-  }, []);
-  useEffect(() => {
-    if (localStorage.getItem("language") !== language) {
-      localStorage.setItem("language", language);
+    console.log("AS", language);
+    if (!language) {
+      if (localStorage.getItem("language")) {
+        setLanguage(localStorage.getItem("language"));
+      } else {
+        setLanguage("en");
+      }
+    } else {
+      if (localStorage.getItem("language") !== language) {
+        window.location.reload()
+        localStorage.setItem("language", language);
+      }
     }
   }, [language]);
 
   const value = useMemo(
-    () => ({ language, setLanguage }),
+    () => ({ language: language, setLanguage }),
     [language, setLanguage]
   );
   return (

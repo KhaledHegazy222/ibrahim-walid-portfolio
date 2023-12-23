@@ -19,10 +19,14 @@ import {
 } from "./Hero.styled";
 import ParticlesBackground from "../ParticlesBackground";
 import { Box, Typography, useMediaQuery } from "@mui/material";
+import contentData from "../../assets/content.json";
 const Hero = () => {
   const fullScreenDisplay = useMediaQuery("(width > 1400px)");
   const { language } = useLanguage();
-  const reverse = language === "ar";
+  console.log("WWWW", language);
+  const content = contentData[language].hero;
+
+  console.log(content.description);
 
   return (
     <>
@@ -32,7 +36,6 @@ const Hero = () => {
         sx={{
           height: "100%",
           display: "flex",
-          flexDirection: reverse ? "row-reverse" : "row",
           alignItems: "center",
           justifyContent: "center",
           position: "relative",
@@ -59,7 +62,7 @@ const Hero = () => {
               }),
             }}
           >
-            Hello, I&apos;m
+            {content.hello}
           </Typography>
           <Typography
             sx={{
@@ -72,7 +75,7 @@ const Hero = () => {
               }),
             }}
           >
-            Ibrahim Walid
+            {content.name}
           </Typography>
           <Typography
             sx={{
@@ -86,14 +89,14 @@ const Hero = () => {
               }),
             }}
           >
-            A Creative{" "}
+            {content.description.static}{" "}
             <span
               style={{
                 color: "#45A0FF",
               }}
             >
               <Typed
-                strings={["UI/UX Designer", "Web Designer"]}
+                strings={content.description.dynamic}
                 typeSpeed={60}
                 backSpeed={60}
                 backDelay={3000}
@@ -112,14 +115,12 @@ const Hero = () => {
               }),
             }}
           >
-            I&apos;m creative designer based in New York, and I&apos;m very
-            passionate and dedicated to my work
+            {content.details}
           </Typography>
           <div
             style={{
               margin: "40px 0",
               display: "flex",
-              flexDirection: reverse ? "row-reverse" : "row",
             }}
           >
             <StyledFilledLink
@@ -130,12 +131,15 @@ const Hero = () => {
                 marginLeft: "0",
               }}
             >
-              Hire me
+              {content.hireButton}
             </StyledFilledLink>
-            <StyledOutlinedLink href="#"> See Portfolio</StyledOutlinedLink>
+            <StyledOutlinedLink href="#">
+              {" "}
+              {content.portfolioButton}
+            </StyledOutlinedLink>
           </div>
           <div>
-            <StyleLinksList centered={!fullScreenDisplay} reverse={reverse}>
+            <StyleLinksList centered={!fullScreenDisplay}>
               <li>
                 <img src={facebookIcon} alt="" />
               </li>

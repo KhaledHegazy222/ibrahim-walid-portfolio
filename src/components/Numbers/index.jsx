@@ -31,7 +31,7 @@ const Numbers = () => {
     return () => {
       clearInterval(intervalId);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startCounting]);
   useEffect(() => {
     if (percentage === 100) {
@@ -40,7 +40,7 @@ const Numbers = () => {
     }
   }, [percentage]);
   const { language } = useLanguage();
-  const reverse = language === "ar";
+
   return (
     <StyledSection
       style={{
@@ -50,7 +50,7 @@ const Numbers = () => {
       }}
     >
       <ScrollTrigger onEnter={() => setStartCounting(true)}>
-        <StyledGridContainer reverse={reverse}>
+        <StyledGridContainer>
           <StyledSummaryElement>
             <StyledTitle component="h4">
               +{Math.round((MaxExpYears * percentage) / 100)}

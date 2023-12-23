@@ -76,7 +76,7 @@ const ImageList = [
 const Portfolio = () => {
   const [selectedTag, setSelectedTag] = useState("*");
   const { language } = useLanguage();
-  const reverse = language === "ar";
+
   return (
     <StyledSection>
       <StyledColoredTitle margin="auto">Portfolio</StyledColoredTitle>
@@ -84,7 +84,7 @@ const Portfolio = () => {
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledGraySubTitle>
-      <StyledNavList reverse={reverse}>
+      <StyledNavList>
         {tagsList.map((tag) => (
           <StyledNavButton
             key={tag.tagName}

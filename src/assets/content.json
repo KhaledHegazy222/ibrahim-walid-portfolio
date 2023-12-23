@@ -1,0 +1,92 @@
+{
+  "en": {
+    "navbar": {
+      "title": "Ibrahim",
+      "navigation": [
+        {
+          "name": "Home",
+          "path": "#"
+        },
+        {
+          "name": "About",
+          "path": "#"
+        },
+        {
+          "name": "Portfolio",
+          "path": "#"
+        },
+        {
+          "name": "Services",
+          "path": "#"
+        },
+        {
+          "name": "Contacts",
+          "path": "#"
+        }
+      ],
+      "resume": "Download CV"
+    },
+    "hero": {
+      "hello": "Hello, I'm",
+      "name": "Ibrahim Walid",
+      "description": {
+        "static": "A Creative ",
+        "dynamic": ["UI / UX Designer", "Web Designer"]
+      },
+      "details": "I'm creative designer based in New York, and I'm very passionate and dedicated to my work",
+      "hireButton": "Hire me",
+      "portfolioButton": "See Portfolio"
+    },
+    "about": {
+      "subHeader": "I’m a Designer",
+      "header": "I Can Design Anything You Want",
+      "content": "Hello there! I'm a web designer, and I'm very passionate and edicated to my work. With 20 years experience as a professional web eveloper, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.",
+      "consultButton": "Get a free consultation now"
+    }
+  },
+  "ar": {
+    "navbar": {
+      "title": "إبراهيم",
+      "navigation": [
+        {
+          "name": "الصفحة الرئيسية",
+          "path": "#"
+        },
+        {
+          "name": "نبذة",
+          "path": "#"
+        },
+        {
+          "name": "أعمالي",
+          "path": "#"
+        },
+        {
+          "name": "الخدمات",
+          "path": "#"
+        },
+        {
+          "name": "تواصل معي",
+          "path": "#"
+        }
+      ],
+      "resume": "Download CV"
+    },
+    "hero": {
+      "hello": "مرحباً, أنا",
+      "name": "إبراهيم وليد",
+      "description": {
+        "static": "",
+        "dynamic": ["مصمم واجهات مستخدم", "مصمم واجهات مستخدم"]
+      },
+      "details": "ااا مصمم مبدع مقيم في مصر، وأنا شغوف جدًا ومتفاني في عملي.",
+      "hireButton": "وظفني",
+      "portfolioButton": "شاهد أعمالي"
+    },
+    "about": {
+      "subHeader": "انا مصمم",
+      "header": "يمكننى تصميم اى شيء تريده",
+      "content": "اهلا بكم انا ابراهيم وليد مصمم تجربة وواجهة المستخدم ومصمم جرافيك  وصانع محتوي مصري وأسست هذا الموقع ليكون المكان المناسب للتواصل معي بطريقة احترافيه وتقديم خدامات تصميم احترافية ولا تتردد في التواصل معنا فنحن في خدم",
+      "consultButton": "إحصل على استشارة مجانية الآن"
+    }
+  }
+}

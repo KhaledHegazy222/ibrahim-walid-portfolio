@@ -1,8 +1,7 @@
 import { Box, Typography, styled } from "@mui/material";
 
-export const StyledNavList = styled("ul")(({ reverse }) => ({
+export const StyledNavList = styled("ul")(() => ({
   display: "flex",
-  flexDirection: reverse ? "row-reverse" : "row",
   justifyContent: "center",
   gap: "16px",
   padding: "50px 0",

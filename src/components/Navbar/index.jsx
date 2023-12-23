@@ -14,10 +14,13 @@ import menuIcon from "../../assets/menuIcon.svg";
 import { IconButton, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
+import contentData from "../../assets/content.json";
+
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ fixed = true }) => {
   const fullDisplay = useMediaQuery("(width > 1000px)");
   const { language, setLanguage } = useLanguage();
+  const content = contentData[language].navbar;
 
   const changeLanguage = () => {
     setLanguage((prevLang) => (prevLang === "en" ? "ar" : "en"));
@@ -48,43 +51,29 @@ const Navbar = ({ fixed = true }) => {
                 }),
               }}
             />
-            <h3>Ibrahim</h3>
+            <h3>{content.title}</h3>
           </StyledLogoContainer>
         </Link>
         {fullDisplay ? (
           <StyledNavigationControls>
             <StyledLinksList>
-              <StyledLinkElement>
-                <a
-                  href="#"
-                  style={{
-                    fontWeight: "700",
-                    color: "#45A0FF",
-                  }}
-                >
-                  Home
-                </a>
-              </StyledLinkElement>
-              <StyledLinkElement>
-                <a href="#">About</a>
-              </StyledLinkElement>
-              <StyledLinkElement>
-                <a href="#">Portfolio</a>
-              </StyledLinkElement>
-              <StyledLinkElement>
-                <a href="#">Services</a>
-              </StyledLinkElement>
-              <StyledLinkElement>
-                <a href="#">Blog</a>
-              </StyledLinkElement>
-              <StyledLinkElement>
-                <a href="#">Contact</a>
-              </StyledLinkElement>
+              {content.navigation.map(({ name, path }, index) => (
+                <StyledLinkElement key={name}>
+                  <a
+                    href={path}
+                    style={
+                      index === 0 ? { fontWeight: "700", color: "#45A0FF" } : {}
+                    }
+                  >
+                    {name}
+                  </a>
+                </StyledLinkElement>
+              ))}
             </StyledLinksList>
-            <StyledFilledLink href="#">Download CV</StyledFilledLink>
+            <StyledFilledLink href="#">{content.resume}</StyledFilledLink>
             <StyledLanguageButton onClick={changeLanguage}>
               <img src={languageIcon} />
-              <p>{language}</p>
+              <p>{language === "en" ? "ar" : "en"}</p>
             </StyledLanguageButton>
           </StyledNavigationControls>
         ) : (

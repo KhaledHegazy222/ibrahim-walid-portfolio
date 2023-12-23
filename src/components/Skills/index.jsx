@@ -8,7 +8,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 
 const Skills = () => {
   const { language } = useLanguage();
-  const reverse = language === "ar";
+
   return (
     <StyledSection
       style={{
@@ -36,7 +36,7 @@ const Skills = () => {
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledParagraph>
-      <StyledList reverse={reverse}>
+      <StyledList>
         <StyledListItem>Ux Research</StyledListItem>
         <StyledListItem>Information Architecture</StyledListItem>
         <StyledListItem>User Flow</StyledListItem>

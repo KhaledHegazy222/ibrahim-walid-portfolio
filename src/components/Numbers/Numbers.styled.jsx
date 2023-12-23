@@ -1,9 +1,8 @@
 import { Typography, styled } from "@mui/material";
 import { StyledColoredTitle } from "../About/About.styled";
 
-export const StyledGridContainer = styled("div")(({ reverse }) => ({
+export const StyledGridContainer = styled("div")(() => ({
   display: "flex",
-  flexDirection: reverse ? "row" : "row-reverse",
   gap: "30px",
 
   justifyContent: "space-evenly",
