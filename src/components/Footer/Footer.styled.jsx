@@ -9,7 +9,8 @@ export const StyledFooter = styled("footer")({
   justifyContent: "space-between",
   padding: "20px 80px",
   paddingLeft: "120px",
-  zIndex: "2",
+  position: "relative",
+  zIndex: "5",
   "@media (width < 872px)": {
     padding: "20px 60px",
     flexDirection: "column",

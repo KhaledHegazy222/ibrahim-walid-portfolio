@@ -4,14 +4,14 @@ import {
   StyledParagraph,
   StyledSection,
 } from "../About/About.styled";
-import ui_design_image from "../../assets/services/ui_design.png";
-import ux_design_image from "../../assets/services/ux_design.png";
-import social_media_design_image from "../../assets/services/social_media_design.png";
-import logo_design_image from "../../assets/services/logo_design.png";
-import mobile_app_design_image from "../../assets/services/mobile_app_design.png";
-import web_design_image from "../../assets/services/web_design.png";
-import identity_design_image from "../../assets/services/identity_design.png";
-import graphic_design_image from "../../assets/services/graphic_design.png";
+// import ui_design_image from "../../assets/services/ui_design.png";
+// import ux_design_image from "../../assets/services/ux_design.png";
+// import social_media_design_image from "../../assets/services/social_media_design.png";
+// import logo_design_image from "../../assets/services/logo_design.png";
+// import mobile_app_design_image from "../../assets/services/mobile_app_design.png";
+// import web_design_image from "../../assets/services/web_design.png";
+// import identity_design_image from "../../assets/services/identity_design.png";
+// import graphic_design_image from "../../assets/services/graphic_design.png";
 import {
   StyledGridContainer,
   StyledGridItem,
@@ -21,56 +21,56 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "../../contexts/LanguageContext";
 import contentData from "../../assets/content.json";
 
-const servicesList = [
-  {
-    path: "/ui-design",
-    title: "UI Design",
-    content: "Most common methods for designing websites that",
-    image: ui_design_image,
-  },
-  {
-    path: "/ui-design",
-    title: "UX Design",
-    content: "Most common methods for designing websites that",
-    image: ux_design_image,
-  },
-  {
-    path: "/ui-design",
-    title: "Social Media Designs",
-    content: "Most common methods for designing websites that",
-    image: social_media_design_image,
-  },
-  {
-    path: "/ui-design",
-    title: "Logo Design",
-    content: "Most common methods for designing websites that",
-    image: logo_design_image,
-  },
-  {
-    path: "/ui-design",
-    title: "Mobile App Design",
-    content: "Most common methods for designing websites that",
-    image: mobile_app_design_image,
-  },
-  {
-    path: "/ui-design",
-    title: "Web Design",
-    content: "Most common methods for designing websites that",
-    image: web_design_image,
-  },
-  {
-    path: "/ui-design",
-    title: "Graphic Design",
-    content: "Most common methods for designing websites that",
-    image: graphic_design_image,
-  },
-  {
-    path: "/ui-design",
-    title: "Identy Design",
-    content: "Most common methods for designing websites that",
-    image: identity_design_image,
-  },
-];
+// const servicesList = [
+//   {
+//     path: "/ui-design",
+//     title: "UI Design",
+//     content: "Most common methods for designing websites that",
+//     image: ui_design_image,
+//   },
+//   {
+//     path: "/ui-design",
+//     title: "UX Design",
+//     content: "Most common methods for designing websites that",
+//     image: ux_design_image,
+//   },
+//   {
+//     path: "/ui-design",
+//     title: "Social Media Designs",
+//     content: "Most common methods for designing websites that",
+//     image: social_media_design_image,
+//   },
+//   {
+//     path: "/ui-design",
+//     title: "Logo Design",
+//     content: "Most common methods for designing websites that",
+//     image: logo_design_image,
+//   },
+//   {
+//     path: "/ui-design",
+//     title: "Mobile App Design",
+//     content: "Most common methods for designing websites that",
+//     image: mobile_app_design_image,
+//   },
+//   {
+//     path: "/ui-design",
+//     title: "Web Design",
+//     content: "Most common methods for designing websites that",
+//     image: web_design_image,
+//   },
+//   {
+//     path: "/ui-design",
+//     title: "Graphic Design",
+//     content: "Most common methods for designing websites that",
+//     image: graphic_design_image,
+//   },
+//   {
+//     path: "/ui-design",
+//     title: "Identy Design",
+//     content: "Most common methods for designing websites that",
+//     image: identity_design_image,
+//   },
+// ];
 const Services = () => {
   const { language } = useLanguage();
   const content = contentData[language].services;

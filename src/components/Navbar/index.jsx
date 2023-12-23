@@ -47,7 +47,7 @@ const Navbar = ({ fixed = true }) => {
             <img
               src={logo}
               style={{
-                width: fullDisplay ? "40px" : "40%",
+                width: "40px",
               }}
             />
             <h3 style={{ fontSize: "2rem" }}>{content.title}</h3>

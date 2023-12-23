@@ -5,9 +5,10 @@ import {
 } from "../About/About.styled";
 import { StyledList, StyledListItem } from "./Skills.styled";
 import { useLanguage } from "../../contexts/LanguageContext";
-
+import contentData from "../../assets/content.json";
 const Skills = () => {
   const { language } = useLanguage();
+  const content = contentData[language].skills;
 
   return (
     <StyledSection
@@ -23,7 +24,7 @@ const Skills = () => {
           padding: "0",
         }}
       >
-        Skills
+        {content.title}
       </StyledColoredTitle>
       <StyledParagraph
         sx={{
@@ -33,18 +34,12 @@ const Skills = () => {
           margin: "auto",
         }}
       >
-        Most common methods for designing websites that work well on desktop is
-        responsive and adaptive design
+        {content.description}
       </StyledParagraph>
       <StyledList>
-        <StyledListItem>Ux Research</StyledListItem>
-        <StyledListItem>Information Architecture</StyledListItem>
-        <StyledListItem>User Flow</StyledListItem>
-        <StyledListItem>Social Media Design</StyledListItem>
-        <StyledListItem>Wireframing & Prototyping</StyledListItem>
-        <StyledListItem>Landing Pages</StyledListItem>
-        <StyledListItem>Responsive Web Design</StyledListItem>
-        <StyledListItem>Logo Design</StyledListItem>
+        {content.skills.map((skill) => (
+          <StyledListItem key={skill}>{skill}</StyledListItem>
+        ))}
       </StyledList>
     </StyledSection>
   );
