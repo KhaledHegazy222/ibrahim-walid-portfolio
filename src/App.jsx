@@ -14,15 +14,15 @@ import Testimonials from "./components/Testimonials";
 import Tools from "./components/Tools";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "./theme";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Details from "./components/Page2/Details";
 import Consultation from "./components/Page2/Consultation";
 import Extras from "./components/Page2/Extras";
 
 function App() {
   return (
-    <BrowserRouter basename="/ibrahim-walid-portfolio">
-    {/* <BrowserRouter> */}
+    <HashRouter basename="/ibrahim-walid-portfolio">
+      {/* <HashRouter> */}
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Routes>
@@ -74,7 +74,7 @@ function App() {
           <Route path="*" element={"Not Found"} />
         </Routes>
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
