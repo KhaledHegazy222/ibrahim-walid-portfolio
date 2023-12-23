@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://KhaledHegazy222.github.io/ibrahim-walid-portfolio",
+  "homepage": "http://khaledhegazy222.github.io/ibrahim-walid-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

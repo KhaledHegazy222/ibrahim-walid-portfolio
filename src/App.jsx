@@ -21,7 +21,8 @@ import Extras from "./components/Page2/Extras";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ibrahim-walid-portfolio">
+    {/* <BrowserRouter> */}
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Routes>
@@ -62,7 +63,7 @@ function App() {
                   <Portfolio />
                   <Clients />
                   <Testimonials />
-                  <div style={{ display:"none",color:"red"}}>
+                  <div style={{ display: "none", color: "red" }}>
                     <Contact />
                   </div>
                 </main>
@@ -70,6 +71,7 @@ function App() {
               </>
             }
           />
+          <Route path="*" element={"Not Found"} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
