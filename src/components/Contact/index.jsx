@@ -17,7 +17,6 @@ import {
   StyledOneLineInput,
   StyledSubmitButton,
 } from "./Contact.styled";
-import { List } from "@mui/material";
 const Contact = () => {
   return (
     <StyledSection

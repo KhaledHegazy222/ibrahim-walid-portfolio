@@ -1,7 +1,8 @@
 import { List, ListItem, styled } from "@mui/material";
 
-export const StyledList = styled(List)({
+export const StyledList = styled(List)(({ reverse }) => ({
   display: "flex",
+  flexDirection: reverse ? "row-reverse" : "row",
   justifyContent: "center",
   alignItems: "center",
   gap: "20px",
@@ -10,7 +11,7 @@ export const StyledList = styled(List)({
   maxWidth: "850px",
   margin: "auto",
   marginTop: "80px",
-});
+}));
 export const StyledListItem = styled(ListItem)({
   width: "max-content",
   borderRadius: "8px",

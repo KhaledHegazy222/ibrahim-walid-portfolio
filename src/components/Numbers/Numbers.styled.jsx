@@ -1,8 +1,9 @@
 import { Typography, styled } from "@mui/material";
 import { StyledColoredTitle } from "../About/About.styled";
 
-export const StyledGridContainer = styled("div")({
+export const StyledGridContainer = styled("div")(({ reverse }) => ({
   display: "flex",
+  flexDirection: reverse ? "row" : "row-reverse",
   gap: "30px",
 
   justifyContent: "space-evenly",
@@ -13,28 +14,7 @@ export const StyledGridContainer = styled("div")({
   "@media (width < 500px)": {
     gap: "16px",
   },
-  // "@media (width < 720px)": {
-  //   display: "grid",
-  //   gridTemplate: "1fr / repeat(2,200px)",
-  //   justifyContent: "center",
-  // },
-
-  // "@media (width < 500px)": {
-  //   display: "grid",
-  //   gridTemplate: "1fr / 200px",
-  //   justifyContent: "center",
-  // },
-});
-
-// export const StyledGridContainer = styled("div")({
-//   display: "grid",
-//   gap: "30px",
-//   gridTemplate: "1fr / repeat(auto-fit,400px)",
-//   justifyContent: "center",
-//   alignItems: "center",
-//   justifyItems: "center",
-//   alignContent: "center",
-// });
+}));
 
 export const StyledSummaryElement = styled("div")({
   background:
@@ -58,7 +38,7 @@ export const StyledTitle = styled(StyledColoredTitle)({
   },
   "@media (width < 500px)": {
     fontSize: "18px",
-    lineHeight:"25.5px"
+    lineHeight: "25.5px",
   },
 });
 

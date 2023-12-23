@@ -7,7 +7,7 @@ import {
   StyledTitle,
 } from "./Numbers.styled";
 import ScrollTrigger from "react-scroll-trigger";
-
+import { useLanguage } from "../../contexts/LanguageContext";
 let intervalId;
 
 const MaxExpYears = 3;
@@ -31,6 +31,7 @@ const Numbers = () => {
     return () => {
       clearInterval(intervalId);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [startCounting]);
   useEffect(() => {
     if (percentage === 100) {
@@ -38,6 +39,8 @@ const Numbers = () => {
       clearInterval(intervalId);
     }
   }, [percentage]);
+  const { language } = useLanguage();
+  const reverse = language === "ar";
   return (
     <StyledSection
       style={{
@@ -47,7 +50,7 @@ const Numbers = () => {
       }}
     >
       <ScrollTrigger onEnter={() => setStartCounting(true)}>
-        <StyledGridContainer>
+        <StyledGridContainer reverse={reverse}>
           <StyledSummaryElement>
             <StyledTitle component="h4">
               +{Math.round((MaxExpYears * percentage) / 100)}

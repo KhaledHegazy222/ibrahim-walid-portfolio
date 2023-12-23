@@ -1,12 +1,13 @@
 import { Box, Typography, styled } from "@mui/material";
 
-export const StyledNavList = styled("ul")({
+export const StyledNavList = styled("ul")(({ reverse }) => ({
   display: "flex",
+  flexDirection: reverse ? "row-reverse" : "row",
   justifyContent: "center",
   gap: "16px",
   padding: "50px 0",
   flexWrap: "wrap",
-});
+}));
 export const StyledNavButton = styled("button")(({ selectedTag }) => ({
   border: "none",
   outline: !selectedTag && "1px solid #0B45B3",

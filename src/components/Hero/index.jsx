@@ -9,7 +9,7 @@ import behanceIcon from "../../assets/behance.svg";
 import twitterIcon from "../../assets/twitter.svg";
 import telegramIcon from "../../assets/telegram.svg";
 import whatsappIcon from "../../assets/whatsapp.svg";
-
+import { useLanguage } from "../../contexts/LanguageContext";
 import { StyledFilledLink, StyledOutlinedLink } from "../Navbar/Navbar.styled";
 import {
   StyleLinksList,
@@ -21,15 +21,18 @@ import ParticlesBackground from "../ParticlesBackground";
 import { Box, Typography, useMediaQuery } from "@mui/material";
 const Hero = () => {
   const fullScreenDisplay = useMediaQuery("(width > 1400px)");
+  const { language } = useLanguage();
+  const reverse = language === "ar";
 
   return (
     <>
-      {/* <ParticlesBackground /> */}
+      <ParticlesBackground />
       <Box
         component="section"
         sx={{
           height: "100%",
           display: "flex",
+          flexDirection: reverse ? "row-reverse" : "row",
           alignItems: "center",
           justifyContent: "center",
           position: "relative",
@@ -115,6 +118,8 @@ const Hero = () => {
           <div
             style={{
               margin: "40px 0",
+              display: "flex",
+              flexDirection: reverse ? "row-reverse" : "row",
             }}
           >
             <StyledFilledLink
@@ -130,7 +135,7 @@ const Hero = () => {
             <StyledOutlinedLink href="#"> See Portfolio</StyledOutlinedLink>
           </div>
           <div>
-            <StyleLinksList centered={!fullScreenDisplay}>
+            <StyleLinksList centered={!fullScreenDisplay} reverse={reverse}>
               <li>
                 <img src={facebookIcon} alt="" />
               </li>
@@ -154,7 +159,7 @@ const Hero = () => {
         </StyledTextSection>
         <StyledImage src={heroImage} />
       </Box>
-      {/* <StyledWhatsappLink href="#">
+      <StyledWhatsappLink href="#">
         <img
           src={whatsappGreenIcon}
           style={{
@@ -163,7 +168,7 @@ const Hero = () => {
           }}
         />
         <Typography>Get a free consultation now</Typography>
-      </StyledWhatsappLink> */}
+      </StyledWhatsappLink>
     </>
   );
 };

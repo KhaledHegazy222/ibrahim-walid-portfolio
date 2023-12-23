@@ -1,15 +1,16 @@
 import styled from "@emotion/styled";
 import { List, ListItem } from "@mui/material";
 
-export const StyledList = styled(List)({
+export const StyledList = styled(List)(({ reverse }) => ({
   display: "flex",
+  flexDirection: reverse ? "row-reverse" : "row",
   justifyContent: "center",
   alignItems: "center",
   gap: "8px",
   padding: 0,
   paddingTop: "80px",
   flexWrap: "wrap ",
-});
+}));
 
 export const StyledListItem = styled(ListItem)({
   padding: "24px 32px",

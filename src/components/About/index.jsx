@@ -13,9 +13,11 @@ import {
 } from "./About.styled";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
-
+import { useLanguage } from "../../contexts/LanguageContext";
 const About = () => {
   const fullScreenDisplay = useMediaQuery("(width > 1300px)");
+  const { language } = useLanguage();
+  const reverse = language === "ar";
   const [zoomIn, setZoomIn] = useState(false);
   const handleEnter = () => {
     setZoomIn(true);
@@ -25,6 +27,7 @@ const About = () => {
       <Box
         sx={{
           display: "flex",
+          flexDirection: reverse ? "row-reverse" : "row",
           alignItems: "flex-start",
           "& > *": {
             flex: "1",

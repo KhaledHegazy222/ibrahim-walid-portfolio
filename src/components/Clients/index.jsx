@@ -11,8 +11,11 @@ import ui_ux_design from "../../assets/clients/ui_ux_design.png";
 import web_design from "../../assets/clients/web_design.png";
 import WhatsappOutlined from "../../assets/WhatsappOutlined";
 import { ArrowForward } from "@mui/icons-material";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Clients = () => {
+  const { language } = useLanguage();
+  const reverse = language === "ar";
   return (
     <StyledSection>
       <StyledColoredTitle margin="auto">
@@ -22,7 +25,7 @@ const Clients = () => {
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledSubTitle>
-      <StyledGridContainer>
+      <StyledGridContainer reverse={reverse}>
         <StyledGridItem>
           <img src={creative_design} alt="" />
           <div>

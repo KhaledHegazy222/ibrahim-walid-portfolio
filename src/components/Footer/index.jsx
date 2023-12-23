@@ -1,4 +1,3 @@
-import { ListItem } from "@mui/material";
 import {
   StyledCopyrights,
   StyledFooter,

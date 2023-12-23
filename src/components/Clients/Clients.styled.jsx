@@ -6,11 +6,31 @@ export const StyledSection = styled(DefaultStyledSection)({
     "linear-gradient(54.59deg, #00387A 5.04%, #001227 62.83%, #001227 62.83%)",
 });
 
-export const StyledGridContainer = styled("ul")({
+export const StyledGridContainer = styled("ul")(({ reverse }) => ({
   padding: "0",
   marginTop: "80px",
   display: "grid",
-  gridTemplate: "1fr / repeat(2,1fr)",
+  gridTemplateRows: "1fr",
+  gridTemplateColumns: "repeat(2,1fr)",
+
+  ...(reverse && {
+    "& > :nth-child(1)": {
+      order: 2,
+    },
+    "& > :nth-child(2)": {
+      order: 1,
+    },
+    "& > :nth-child(3)": {
+      order: 4,
+    },
+    "& > :nth-child(4)": {
+      order: 3,
+    },
+    "& > *": {
+      flexDirection: "row-reverse",
+    },
+  }),
+
   gap: "30px",
   justifyContent: "center",
   alignContent: "center",
@@ -19,10 +39,11 @@ export const StyledGridContainer = styled("ul")({
   "@media (width < 900px)": {
     gridTemplate: "1fr / 1fr",
   },
-});
+}));
 export const StyledGridItem = styled("li")({
   display: "flex",
   alignItems: "flex-start",
+
   gap: "24px",
   background: "white",
   borderRadius: "8px",

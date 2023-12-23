@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
 import { List } from "@mui/material";
 
-export const StyleLinksList = styled(List)(({ centered }) => ({
+export const StyleLinksList = styled(List)(({ centered, reverse }) => ({
   margin: "20px 0",
   display: "flex",
+  flexDirection: reverse ? "row-reverse" : "row",
   gap: "10px",
   justifyContent: centered ? "center" : "flex-start",
 }));

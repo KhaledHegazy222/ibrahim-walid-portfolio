@@ -12,8 +12,11 @@ import adobe_xd_image from "../../assets/tools/adobe_xd.png";
 import miro_image from "../../assets/tools/miro.png";
 import notion_image from "../../assets/tools/notion.png";
 import trello_image from "../../assets/tools/trello.png";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Tools = () => {
+  const { language } = useLanguage();
+  const reverse = language === "ar";
   return (
     <StyledSection
       style={{
@@ -26,7 +29,7 @@ const Tools = () => {
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledGraySubTitle>
-      <StyledList>
+      <StyledList reverse={reverse}>
         <StyledListItem>
           <img src={figma_image} alt="" />
           <p>Figma</p>

@@ -4,8 +4,11 @@ import {
   StyledSection,
 } from "../About/About.styled";
 import { StyledList, StyledListItem } from "./Skills.styled";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Skills = () => {
+  const { language } = useLanguage();
+  const reverse = language === "ar";
   return (
     <StyledSection
       style={{
@@ -33,7 +36,7 @@ const Skills = () => {
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledParagraph>
-      <StyledList>
+      <StyledList reverse={reverse}>
         <StyledListItem>Ux Research</StyledListItem>
         <StyledListItem>Information Architecture</StyledListItem>
         <StyledListItem>User Flow</StyledListItem>

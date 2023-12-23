@@ -21,7 +21,7 @@ import {
   StyledDescriptionSubtitle,
 } from "./Portfolio.styled";
 import { Box } from "@mui/material";
-
+import { useLanguage } from "../../contexts/LanguageContext";
 const tagsList = [
   {
     title: "All",
@@ -75,7 +75,8 @@ const ImageList = [
 
 const Portfolio = () => {
   const [selectedTag, setSelectedTag] = useState("*");
-
+  const { language } = useLanguage();
+  const reverse = language === "ar";
   return (
     <StyledSection>
       <StyledColoredTitle margin="auto">Portfolio</StyledColoredTitle>
@@ -83,7 +84,7 @@ const Portfolio = () => {
         Most common methods for designing websites that work well on desktop is
         responsive and adaptive design
       </StyledGraySubTitle>
-      <StyledNavList>
+      <StyledNavList reverse={reverse}>
         {tagsList.map((tag) => (
           <StyledNavButton
             key={tag.tagName}

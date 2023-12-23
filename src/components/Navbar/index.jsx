@@ -13,9 +13,15 @@ import languageIcon from "../../assets/language.svg";
 import menuIcon from "../../assets/menuIcon.svg";
 import { IconButton, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../../contexts/LanguageContext";
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ fixed = true }) => {
   const fullDisplay = useMediaQuery("(width > 1000px)");
+  const { language, setLanguage } = useLanguage();
+
+  const changeLanguage = () => {
+    setLanguage((prevLang) => (prevLang === "en" ? "ar" : "en"));
+  };
 
   return (
     <StyledAppBar component="nav" fixed={fixed}>
@@ -76,9 +82,9 @@ const Navbar = ({ fixed = true }) => {
               </StyledLinkElement>
             </StyledLinksList>
             <StyledFilledLink href="#">Download CV</StyledFilledLink>
-            <StyledLanguageButton>
+            <StyledLanguageButton onClick={changeLanguage}>
               <img src={languageIcon} />
-              <p>Ar</p>
+              <p>{language}</p>
             </StyledLanguageButton>
           </StyledNavigationControls>
         ) : (

@@ -62,7 +62,9 @@ function App() {
                   <Portfolio />
                   <Clients />
                   <Testimonials />
-                  {/* <Contact /> */}
+                  <div style={{ display:"none"}}>
+                    <Contact />
+                  </div>
                 </main>
                 <Footer />
               </>
