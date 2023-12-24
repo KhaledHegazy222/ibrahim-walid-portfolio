@@ -11,13 +11,15 @@ import behanceIcon from "../../assets/behance.svg";
 import twitterIcon from "../../assets/twitter.svg";
 import telegramIcon from "../../assets/telegram.svg";
 import whatsappIcon from "../../assets/whatsapp.svg";
+import { useLanguage } from "../../contexts/LanguageContext";
+import contentData from "../../assets/content.json";
 
 const Footer = () => {
+  const { language } = useLanguage();
+  const content = contentData[language].footer;
   return (
     <StyledFooter>
-      <StyledCopyrights>
-        &copy; 2024 copyright all rights reserved
-      </StyledCopyrights>
+      <StyledCopyrights>&copy; {content.content}</StyledCopyrights>
       <StyledList>
         <StyledListItem>
           <a href="#">

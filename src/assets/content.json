@@ -48,56 +48,56 @@
       "description": "Most common methods for designing websites that work well on desktop is responsive and adaptive design",
       "services": [
         {
-          "image": "/src/assets/services/logo_design.png",
+          "id": "logo_design",
           "header": "Logo Design",
           "description": "Most common methods for designing websites",
           "path": "/logo-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/social_media_design.png",
+          "id": "social_media_design",
           "header": "Social Media Designs",
           "description": "Most common methods for designing websites",
           "path": "/social-media-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/ux_design.png",
+          "id": "ux_design",
           "header": "UX Design",
           "description": "Most common methods for designing websites",
           "path": "/ux-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/ui_design.png",
+          "id": "ui_design",
           "header": "UI Design",
           "description": "Most common methods for designing websites",
           "path": "/ui-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/identity_design.png",
+          "id": "identity_design",
           "header": "Identity Design",
           "description": "Most common methods for designing websites",
           "path": "/identity-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/graphic_design.png",
+          "id": "graphic_design",
           "header": "Graphic Design",
           "description": "Most common methods for designing websites",
           "path": "/graphic-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/web_design.png",
+          "id": "web_design",
           "header": "Web Design",
           "description": "Most common methods for designing websites",
           "path": "/web-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/mobile_app_design.png",
+          "id": "mobile_app_design",
           "header": "Mobile App Design",
           "description": "Most common methods for designing websites",
           "path": "/mobile-app-design",
@@ -124,25 +124,90 @@
       "description": "Most common methods for designing websites that work well on desktop is responsive and adaptive design",
       "tools": [
         {
-          "name": "figma",
-          "image": "/src/assets/tools/figma.png"
+          "id": "figma",
+          "name": "figma"
         },
         {
-          "name": "Adobe illustrator",
-          "image": "/src/assets/tools/adobe_il.png"
+          "id": "adobe_il",
+          "name": "Adobe illustrator"
         },
         {
-          "name": "Adobe Photoshop",
-          "image": "/src/assets/tools/adobe_ps.png"
+          "id": "adobe_ps",
+          "name": "Adobe Photoshop"
         },
         {
-          "name": "Adobe Xd",
-          "image": "/src/assets/tools/adobe_xd.png"
+          "id": "adobe_xd",
+          "name": "Adobe Xd"
         },
-        { "name": "Miro", "image": "/src/assets/tools/miro.png" },
-        { "name": "Notion", "image": "/src/assets/tools/notion.png" },
-        { "name": "Trello", "image": "/src/assets/tools/trello.png" }
+        {
+          "id": "miro",
+          "name": "Miro"
+        },
+        {
+          "id": "notion",
+          "name": "Notion"
+        },
+        {
+          "id": "trello",
+          "name": "Trello"
+        }
       ]
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Most common methods for designing websites that work well on desktop is responsive and adaptive design",
+      "tagsList": [
+        {
+          "title": "All",
+          "tagName": "*"
+        },
+        {
+          "title": "UI Designs",
+          "tagName": "ui_ux"
+        },
+        {
+          "title": "Social Media Designs",
+          "tagName": "social_media"
+        },
+        {
+          "title": "Logo Designs",
+          "tagName": "logos"
+        },
+        {
+          "title": "Poster Designs",
+          "tagName": "posters"
+        }
+      ]
+    },
+    "clients": {
+      "title": "What I do for clients",
+      "description": "Most common methods for designing websites that work well on desktop is responsive and adaptive design",
+      "content": [
+        {
+          "id": "creative_design",
+          "title": "Creative Design",
+          "description": "Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development"
+        },
+        {
+          "id": "graphic_design",
+          "title": "Graphic Design",
+          "description": "Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development"
+        },
+        {
+          "id": "ui_ux_design",
+          "title": "UI/UX Design",
+          "description": "Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development"
+        },
+        {
+          "id": "web_design",
+          "title": "Web Design",
+          "description": "Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development"
+        }
+      ],
+      "contactButton": "Contact us to know the details"
+    },
+    "footer": {
+      "content": "2024 copyright all rights reserved"
     }
   },
   "ar": {
@@ -170,7 +235,7 @@
           "path": "#"
         }
       ],
-      "resume": "Download CV"
+      "resume": "تحميل السيرة الذاتية"
     },
     "hero": {
       "hello": "مرحباً, أنا",
@@ -189,62 +254,63 @@
       "content": "اهلا بكم انا ابراهيم وليد مصمم تجربة وواجهة المستخدم ومصمم جرافيك  وصانع محتوي مصري وأسست هذا الموقع ليكون المكان المناسب للتواصل معي بطريقة احترافيه وتقديم خدامات تصميم احترافية ولا تتردد في التواصل معنا فنحن في خدم",
       "consultButton": "إحصل على استشارة مجانية الآن"
     },
-
     "services": {
       "title": "الخدمات",
-      "subTitle": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب هي التصميم المتجاوب والمتأقلم مع جميع الشاشات",
+      "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب هي التصميم المتجاوب والمتأقلم مع جميع الشاشات",
       "services": [
         {
-          "image": "/src/assets/services/logo_design.png",
+          "id": "logo_design",
+
           "header": "تصميم الشعارات",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/logo-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/social_media_design.png",
+          "id": "social_media_design",
+
           "header": "تصميمات السوشيال ميديا",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/social-media-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/ux_design.png",
+          "id": "ux_design",
           "header": "تصميم تجربة المستخدم",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/ux-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/ui_design.png",
+          "id": "ui_design",
           "header": "تصميم واجهات المستخدم",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/ui-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/identity_design.png",
+          "id": "identity_design",
           "header": "تصميم الهوية البصرية",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/identity-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/graphic_design.png",
+          "id": "graphic_design",
           "header": "تصميم الجرافيك",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/graphic-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/web_design.png",
+          "id": "web_design",
           "header": "تصميم مواقع الإنترنت",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/web-design",
           "content": "الآن يمكنك الوصول إلى قاعدة أكبر من العملاء عن طريق طلب خدمة تصميم مواقع الويب من شركة العالمية الحرة افضل شركة تصميم مواقع الكترونية في الوطن العربي، ساعد نشاطك التجاري على الانتشار بأفضل شكل ممكن من خلال تصميم مواقع ويب مميزة تعكس هويتك التجارية على الويب بصورة مثالية، يمكنك أيضا تصدر نتائج البحث عن طريق اعتمادك علينا في تصميم تصميم مواقع نت احترافية لنشاطك التجاري."
         },
         {
-          "image": "/src/assets/services/mobile_app_design.png",
+          "id": "mobile_app_design",
           "header": "تصميم تطبيقات الموبايل",
           "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
           "path": "/mobile-app-design",
@@ -256,40 +322,105 @@
       "title": "المهارات",
       "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب هي التصميم المتجاوب والمتأقلم مع جميع الشاشات",
       "skills": [
-        "Ux Research",
-        "Information Architecture",
-        "User Flow",
-        "Social Media Design",
-        "Wireframing & Prototyping",
-        "Landing Pages",
-        "Responsive Web Design",
-        "Logo Design"
+        "أبحاث تجربة المستخدم",
+        "هندسة المعلومات",
+        "تدفق المستخدم",
+        "تصميم وسائل التواصل الاجتماعي",
+        "الأسلاك والنماذج الأولية",
+        "الصفحات المقصودة",
+        "تصميم الويب سريع الاستجابة",
+        "تصميم شعار"
       ]
     },
     "tools": {
-      "title": "Tools",
+      "title": "الأدوات",
       "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب هي التصميم المتجاوب والمتأقلم مع جميع الشاشات",
       "tools": [
         {
-          "name": "فيجما",
-          "image": "/src/assets/tools/figma.png"
+          "id": "figma",
+          "name": "فيجما"
         },
         {
-          "name": "أدوبى اليستريتور",
-          "image": "/src/assets/tools/adobe_il.png"
+          "id": "adobe_il",
+          "name": "أدوبى اليستريتور"
         },
         {
-          "name": "أدوبى فوتوشوب",
-          "image": "/src/assets/tools/adobe_ps.png"
+          "id": "adobe_ps",
+          "name": "أدوبى فوتوشوب"
         },
         {
-          "name": "ادوبى اكس دى",
-          "image": "/src/assets/tools/adobe_xd.png"
+          "id": "adobe_xd",
+          "name": "ادوبى اكس دى"
         },
-        { "name": "ميرو", "image": "/src/assets/tools/miro.png" },
-        { "name": "نوشن", "image": "/src/assets/tools/notion.png" },
-        { "name": "تريلو", "image": "/src/assets/tools/trello.png" }
+        {
+          "id": "miro",
+          "name": "ميرو"
+        },
+        {
+          "id": "notion",
+          "name": "نوشن"
+        },
+        {
+          "id": "trello",
+          "name": "تريلو"
+        }
       ]
+    },
+    "portfolio": {
+      "title": "الأعمال",
+      "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب هي التصميم المتجاوب والمتأقلم مع جميع الشاشات",
+      "tagsList": [
+        {
+          "title": "الكل",
+          "tagName": "*"
+        },
+        {
+          "title": "تصميم واجهات المستخدم",
+          "tagName": "ui_ux"
+        },
+        {
+          "title": "تصميم السوشيال ميديا",
+          "tagName": "social_media"
+        },
+        {
+          "title": "تصميم شعارات",
+          "tagName": "logos"
+        },
+        {
+          "title": "تصميم ملصقات",
+          "tagName": "posters"
+        }
+      ]
+    },
+    "clients": {
+      "title": "ماذا أقدم للعملاء",
+      "description": "أكثر الطرق شيوعًا لتصميم مواقع الويب التي تعمل بشكل جيد على سطح المكتب",
+      "content": [
+        {
+          "id": "creative_design",
+          "title": "التصميم الإبداعي",
+          "description": "يشير تصميم الويب إلى تصميم مواقع الويب التي يتم عرضها على الإنترنت. ويشير عادةً إلى جوانب تجربة المستخدم في تطوير موقع الويب"
+        },
+        {
+          "id": "graphic_design",
+          "title": "التصميم الجرافيكى",
+          "description": "يشير تصميم الويب إلى تصميم مواقع الويب التي يتم عرضها على الإنترنت. ويشير عادةً إلى جوانب تجربة المستخدم في تطوير موقع الويب"
+        },
+        {
+          "id": "ui_ux_design",
+          "title": "تصميم واجهات & تجربة المستخدم",
+          "description": "يشير تصميم الويب إلى تصميم مواقع الويب التي يتم عرضها على الإنترنت. ويشير عادةً إلى جوانب تجربة المستخدم في تطوير موقع الويب"
+        },
+        {
+          "id": "web_design",
+          "title": "تصميم تطبيقات الويب",
+          "description": "يشير تصميم الويب إلى تصميم مواقع الويب التي يتم عرضها على الإنترنت. ويشير عادةً إلى جوانب تجربة المستخدم في تطوير موقع الويب"
+        }
+      ],
+      "contactButton": "اتصل بنا لمعرفة التفاصيل"
+    },
+    "footer": {
+      "content": "حقوق الطبع والنشر جميع الحقوق محفوظة 2024"
     }
   }
 }

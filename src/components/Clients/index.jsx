@@ -10,102 +10,55 @@ import graphic_design from "../../assets/clients/graphic_design.png";
 import ui_ux_design from "../../assets/clients/ui_ux_design.png";
 import web_design from "../../assets/clients/web_design.png";
 import WhatsappOutlined from "../../assets/WhatsappOutlined";
-import { ArrowForward } from "@mui/icons-material";
+import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { useLanguage } from "../../contexts/LanguageContext";
-
+import contentData from "../../assets/content.json";
+const imagesLookup = [
+  { id: "creative_design", image: creative_design },
+  { id: "graphic_design", image: graphic_design },
+  { id: "ui_ux_design", image: ui_ux_design },
+  { id: "web_design", image: web_design },
+];
 const Clients = () => {
   const { language } = useLanguage();
-
+  const reverse = language === "ar";
+  const content = contentData[language].clients;
   return (
     <StyledSection>
-      <StyledColoredTitle margin="auto">
-        What I Do for Clients
-      </StyledColoredTitle>
+      <StyledColoredTitle margin="auto">{content.title}</StyledColoredTitle>
       <StyledSubTitle margin="auto" maxWidth="592px" textAlign="center">
-        Most common methods for designing websites that work well on desktop is
-        responsive and adaptive design
+        {content.description}
       </StyledSubTitle>
       <StyledGridContainer>
-        <StyledGridItem>
-          <img src={creative_design} alt="" />
-          <div>
-            <h5>Creative Design</h5>
-            <p>
-              Web design refers to the design of websites that are displayed on
-              the internet. It usually refers to the user experience aspects of
-              website development
-            </p>
-            <a href="#">
-              <WhatsappOutlined />
-              Contact us to know the details
-              <ArrowForward
-                sx={{
-                  color: "inherit",
-                }}
-              />
-            </a>
-          </div>
-        </StyledGridItem>
-        <StyledGridItem>
-          <img src={graphic_design} alt="" />
-          <div>
-            <h5>Graphic Design</h5>
-            <p>
-              Web design refers to the design of websites that are displayed on
-              the internet. It usually refers to the user experience aspects of
-              website development
-            </p>
-            <a href="#">
-              <WhatsappOutlined />
-              Contact us to know the details{" "}
-              <ArrowForward
-                sx={{
-                  color: "inherit",
-                }}
-              />
-            </a>
-          </div>
-        </StyledGridItem>
-        <StyledGridItem>
-          <img src={ui_ux_design} alt="" />
-          <div>
-            <h5>UI/UX Design</h5>
-            <p>
-              Web design refers to the design of websites that are displayed on
-              the internet. It usually refers to the user experience aspects of
-              website development
-            </p>
-            <a href="#">
-              <WhatsappOutlined />
-              Contact us to know the details{" "}
-              <ArrowForward
-                sx={{
-                  color: "inherit",
-                }}
-              />
-            </a>
-          </div>
-        </StyledGridItem>
-        <StyledGridItem>
-          <img src={web_design} alt="" />
-          <div>
-            <h5>Web Design</h5>
-            <p>
-              Web design refers to the design of websites that are displayed on
-              the internet. It usually refers to the user experience aspects of
-              website development
-            </p>
-            <a href="#">
-              <WhatsappOutlined />
-              Contact us to know the details{" "}
-              <ArrowForward
-                sx={{
-                  color: "inherit",
-                }}
-              />
-            </a>
-          </div>
-        </StyledGridItem>
+        {content.content.map(({ id, title, description }) => (
+          <StyledGridItem key={id}>
+            <img
+              src={imagesLookup.find((elem) => elem.id === id).image}
+              alt={title}
+            />
+            <div>
+              <h5>{title}</h5>
+              <p>{description}</p>
+              <a href="#">
+                <WhatsappOutlined />
+                {content.contactButton}
+                {reverse ? (
+                  <ArrowBack
+                    sx={{
+                      color: "inherit",
+                    }}
+                  />
+                ) : (
+                  <ArrowForward
+                    sx={{
+                      color: "inherit",
+                    }}
+                  />
+                )}
+              </a>
+            </div>
+          </StyledGridItem>
+        ))}
       </StyledGridContainer>
     </StyledSection>
   );

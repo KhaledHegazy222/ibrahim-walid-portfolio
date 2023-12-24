@@ -22,28 +22,8 @@ import {
 } from "./Portfolio.styled";
 import { Box } from "@mui/material";
 import { useLanguage } from "../../contexts/LanguageContext";
-const tagsList = [
-  {
-    title: "All",
-    tagName: "*",
-  },
-  {
-    title: "UI Designs",
-    tagName: "ui_ux",
-  },
-  {
-    title: "Social Media Designs",
-    tagName: "social_media",
-  },
-  {
-    title: "Logo Designs",
-    tagName: "logos",
-  },
-  {
-    title: "Poster Designs",
-    tagName: "posters",
-  },
-];
+import contentData from "../../assets/content.json";
+
 
 const ImageList = [
   {
@@ -76,16 +56,15 @@ const ImageList = [
 const Portfolio = () => {
   const [selectedTag, setSelectedTag] = useState("*");
   const { language } = useLanguage();
-
+  const content = contentData[language].portfolio;
   return (
     <StyledSection>
-      <StyledColoredTitle margin="auto">Portfolio</StyledColoredTitle>
+      <StyledColoredTitle margin="auto">{content.title}</StyledColoredTitle>
       <StyledGraySubTitle margin="auto" maxWidth="592px" textAlign="center">
-        Most common methods for designing websites that work well on desktop is
-        responsive and adaptive design
+        {content.description}
       </StyledGraySubTitle>
       <StyledNavList>
-        {tagsList.map((tag) => (
+        {content.tagsList.map((tag) => (
           <StyledNavButton
             key={tag.tagName}
             onClick={() => setSelectedTag(tag.tagName)}
