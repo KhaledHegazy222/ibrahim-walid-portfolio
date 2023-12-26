@@ -16,7 +16,7 @@ export const LanguageContextProvider = ({ children }) => {
       }
     } else {
       if (localStorage.getItem("language") !== language) {
-        // window.location.reload()
+        window.location.reload();
         localStorage.setItem("language", language);
       }
     }

@@ -1,5 +1,9 @@
 import whatsappOutlined from "../../../assets/whatsappOutlined.svg";
+import contentData from "../../../assets/content.json";
+import { useLanguage } from "../../../contexts/LanguageContext";
 const Consultation = () => {
+  const { language } = useLanguage();
+  const content = contentData[language].consult;
   return (
     <div
       style={{
@@ -14,7 +18,7 @@ const Consultation = () => {
       }}
     >
       <h2 style={{ fontSize: "40px", fontWeight: "600", marginBottom: "20px" }}>
-        Get Free Consultation
+        {content.title}
       </h2>
       <a
         style={{
@@ -28,7 +32,7 @@ const Consultation = () => {
           gap: "8px",
         }}
       >
-        <img src={whatsappOutlined} /> Contact us
+        <img src={whatsappOutlined} /> {content.contact}
       </a>
     </div>
   );

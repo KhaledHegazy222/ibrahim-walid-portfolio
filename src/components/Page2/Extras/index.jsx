@@ -1,6 +1,10 @@
 import extras1 from "../../../assets/extras1.svg";
 import extras2 from "../../../assets/extras2.svg";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import contentData from "../../../assets/content.json";
 const Extras = () => {
+  const { language } = useLanguage();
+  const content = contentData[language].extras;
   return (
     <div
       style={{
@@ -28,7 +32,7 @@ const Extras = () => {
               marginBottom: "30px",
             }}
           >
-            أهمية تصميم شعار لمنتجك
+            {content.section1.title}
           </h3>
           <ul
             style={{
@@ -37,19 +41,9 @@ const Extras = () => {
               padding: "0 20px",
             }}
           >
-            <li>
-              يوفر لك التطبيق يوفر لك التطبيق إمكانية الوصول إلى عملاء جدد.
-            </li>
-            <li>
-              يقدم لك خاصية &quot;إرسال الإشعارات&quot; ويضمن لك سهولة الوصول
-              إلى العملاء.
-            </li>
-            <li>
-              يمكنك التطبيق من التواصل المباشر مع العملاء من خلال خدمة المحادثة.
-            </li>
-            <li>
-              يوفر الكثير من التكاليف التي يتم صرفها على الحملات الإعلانية.
-            </li>
+            {content.section1.content.map((entry) => (
+              <li key={entry}>{entry}</li>
+            ))}
           </ul>
         </div>
       </div>
@@ -72,7 +66,7 @@ const Extras = () => {
               marginBottom: "30px",
             }}
           >
-            المميزات التي تحصل عليها عند تصميم شعار
+            {content.section2.title}
           </h3>
           <ul
             style={{
@@ -81,19 +75,9 @@ const Extras = () => {
               padding: "0 20px",
             }}
           >
-            <li>
-              يوفر لك التطبيق يوفر لك التطبيق إمكانية الوصول إلى عملاء جدد.
-            </li>
-            <li>
-              يقدم لك خاصية &quot;إرسال الإشعارات&quot; ويضمن لك سهولة الوصول
-              إلى العملاء.
-            </li>
-            <li>
-              يمكنك التطبيق من التواصل المباشر مع العملاء من خلال خدمة المحادثة.
-            </li>
-            <li>
-              يوفر الكثير من التكاليف التي يتم صرفها على الحملات الإعلانية.
-            </li>
+            {content.section2.content.map((entry) => (
+              <li key={entry}>{entry}</li>
+            ))}
           </ul>
         </div>
       </div>

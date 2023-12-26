@@ -2,42 +2,22 @@ import downArrows from "../../../assets/downArrows.svg";
 import details1 from "../../../assets/details1.svg";
 import details2 from "../../../assets/details2.svg";
 import details3 from "../../../assets/details3.svg";
-import { Box, List, ListItem } from "@mui/material";
+import { List, ListItem } from "@mui/material";
 import { useEffect } from "react";
-const detailsList = [
-  {
-    image: details1,
-    title: "أفكار إبداعية",
-    content:
-      "أفكار إبداعية مبتكرة تتميز بالحصرية والانفراد تساعدك على كسب ثقة العملاء.",
-  },
-  {
-    image: details2,
-    title: "أفكار إبداعية",
-    content: "دقة عالية في عمل تحليلات الأسواق ودراسة المنافسين.",
-  },
-  {
-    image: details3,
-    title: "أفكار إبداعية",
-    content:
-      "سرعة في تصميم العلامة التجارية وتصميم الهوية البصرية مع مراعاة جودة التصميم.",
-  },
-];
+import { StyledSection } from "../../About/About.styled";
+import { useLanguage } from "../../../contexts/LanguageContext";
+import contentData from "../../../assets/content.json";
+const images = [details1, details2, details3];
 
 // eslint-disable-next-line react/prop-types
-const Details = ({ title, content }) => {
+const Details = ({ title, content: pageDetails }) => {
+  const { language } = useLanguage();
+  const content = contentData[language].details;
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <Box
-      sx={{
-        padding: "120px",
-        "& > *": {
-          direction: "rtl",
-        },
-      }}
-    >
+    <StyledSection>
       <h2
         style={{
           fontSize: "48px",
@@ -59,7 +39,7 @@ const Details = ({ title, content }) => {
           textAlign: "center",
         }}
       >
-        {content}
+        {pageDetails}
       </p>
       <img
         src={downArrows}
@@ -74,9 +54,9 @@ const Details = ({ title, content }) => {
           gap: "30px",
         }}
       >
-        {detailsList.map(({ image, title, content }) => (
+        {content.map(({ title, description }, index) => (
           <ListItem
-            key={title}
+            key={index}
             sx={{
               background: "linear-gradient(90deg,#e0ecfb,#edf2fa)",
               padding: "40px",
@@ -88,26 +68,30 @@ const Details = ({ title, content }) => {
               style={{
                 display: "flex",
                 alignItems: "center",
+                justifyContent: "flex-start",
                 gap: "8px",
               }}
             >
-              <img src={image} style={{ width: "32px", height: "32px" }} />
+              <img
+                src={images[Math.floor(Math.random() * 3)]}
+                style={{ width: "32px", height: "32px" }}
+              />
               <h4 style={{ fontSize: "24px" }}>{title}</h4>
             </div>
             <p
               style={{
-                textAlign: "right",
+                textAlign: "start",
                 fontWeight: "500",
                 fontSize: "16px",
                 marginTop: "16px",
               }}
             >
-              {content}
+              {description}
             </p>
           </ListItem>
         ))}
       </List>
-    </Box>
+    </StyledSection>
   );
 };
 

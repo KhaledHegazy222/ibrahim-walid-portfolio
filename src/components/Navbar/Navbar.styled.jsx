@@ -53,6 +53,7 @@ export const StyledFilledLink = styled("a")({
   fontSize: "1rem",
   borderRadius: "32px",
   textTransform: "none",
+  textAlign: "center",
   "&:hover": {
     background:
       "linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), linear-gradient(90deg, #0B45B3 0%, #288BF0 100%)",

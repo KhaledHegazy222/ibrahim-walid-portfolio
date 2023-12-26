@@ -7,6 +7,8 @@ import {
 } from "../About/About.styled";
 import { StyledList } from "./Testimonials.styled";
 import { useEffect, useState } from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
+import contentData from "../../assets/content.json";
 
 const testimonialsList = [
   {
@@ -40,6 +42,9 @@ const testimonialsList = [
 ];
 
 const Testimonials = () => {
+  const { language } = useLanguage();
+  const content = contentData[language].testimonials;
+
   const [middleCard, setMiddleCard] = useState(0);
   const leftCard = (middleCard + 1) % testimonialsList.length;
   const rightCard =
@@ -58,10 +63,9 @@ const Testimonials = () => {
         paddingRight: "0",
       }}
     >
-      <StyledColoredTitle margin="auto">Testimonials </StyledColoredTitle>
+      <StyledColoredTitle margin="auto">{content.title}</StyledColoredTitle>
       <StyledGraySubTitle margin="auto" maxWidth="592px" textAlign="center">
-        Most common methods for designing websites that work well on desktop is
-        responsive and adaptive design
+        {content.description}
       </StyledGraySubTitle>
       <StyledList>
         {testimonialsList.map(

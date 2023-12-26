@@ -5,6 +5,9 @@ export const StyledSection = styled("section")({
   padding: "120px",
   position: "relative",
   zIndex: "3",
+  // "& *": {
+  //   direction: "ltr",
+  // },
   "@media screen and (width < 1400px)": {
     padding: "30px 16px",
   },
