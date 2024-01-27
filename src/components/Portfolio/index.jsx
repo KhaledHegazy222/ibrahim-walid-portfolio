@@ -20,10 +20,10 @@ import {
   StyledDescriptionTitle,
   StyledDescriptionSubtitle,
 } from "./Portfolio.styled";
-import { Box } from "@mui/material";
+import { Box, Dialog, IconButton, Modal, Typography } from "@mui/material";
 import { useLanguage } from "../../contexts/LanguageContext";
 import contentData from "../../assets/content.json";
-
+import { Close } from "@mui/icons-material";
 
 const ImageList = [
   {
@@ -55,48 +55,104 @@ const ImageList = [
 
 const Portfolio = () => {
   const [selectedTag, setSelectedTag] = useState("*");
+  const [selectedImage, setSelectedImage] = useState(null);
   const { language } = useLanguage();
   const content = contentData[language].portfolio;
   return (
-    <StyledSection>
-      <StyledColoredTitle margin="auto">{content.title}</StyledColoredTitle>
-      <StyledGraySubTitle margin="auto" maxWidth="592px" textAlign="center">
-        {content.description}
-      </StyledGraySubTitle>
-      <StyledNavList>
-        {content.tagsList.map((tag) => (
-          <StyledNavButton
-            key={tag.tagName}
-            onClick={() => setSelectedTag(tag.tagName)}
-            selectedTag={selectedTag === tag.tagName}
+    <>
+      <StyledSection>
+        <StyledColoredTitle margin="auto">{content.title}</StyledColoredTitle>
+        <StyledGraySubTitle margin="auto" maxWidth="592px" textAlign="center">
+          {content.description}
+        </StyledGraySubTitle>
+        <StyledNavList>
+          {content.tagsList.map((tag) => (
+            <StyledNavButton
+              key={tag.tagName}
+              onClick={() => setSelectedTag(tag.tagName)}
+              selectedTag={selectedTag === tag.tagName}
+            >
+              {tag.title}
+            </StyledNavButton>
+          ))}
+        </StyledNavList>
+        <StyledGridContainer>
+          {ImageList.filter((image) => {
+            if (selectedTag === "*") return true;
+            return image.tags.includes(selectedTag);
+          }).map((image) => (
+            <StyledImageContainer
+              key={image.title}
+              onClick={() => setSelectedImage(image)}
+            >
+              <StyledImage src={image.image} />
+              <StyledImageDescription>
+                <Box
+                  sx={{
+                    width: "100%",
+                  }}
+                >
+                  <StyledDescriptionTitle>{image.title}</StyledDescriptionTitle>
+                  <StyledDescriptionSubtitle>
+                    {image.title}
+                  </StyledDescriptionSubtitle>
+                </Box>
+              </StyledImageDescription>
+            </StyledImageContainer>
+          ))}
+        </StyledGridContainer>
+      </StyledSection>
+      <Dialog
+        open={selectedImage !== null}
+        onClose={() => setSelectedImage(null)}
+        sx={{
+          "& .MuiPaper-root": {
+            maxWidth: "unset",
+            maxHeight: "unset",
+            borderRadius: "12px",
+          },
+        }}
+      >
+        <Box>
+          <StyledImageContainer
+            sx={{
+              height: "95vh",
+            }}
           >
-            {tag.title}
-          </StyledNavButton>
-        ))}
-      </StyledNavList>
-      <StyledGridContainer>
-        {ImageList.filter((image) => {
-          if (selectedTag === "*") return true;
-          return image.tags.includes(selectedTag);
-        }).map((image) => (
-          <StyledImageContainer key={image.title}>
-            <StyledImage src={image.image} />
+            <StyledImage src={selectedImage?.image} />
             <StyledImageDescription>
               <Box
                 sx={{
                   width: "100%",
                 }}
               >
-                <StyledDescriptionTitle>{image.title}</StyledDescriptionTitle>
+                <StyledDescriptionTitle>
+                  {selectedImage?.title}
+                </StyledDescriptionTitle>
                 <StyledDescriptionSubtitle>
-                  {image.title}
+                  {selectedImage?.title}
                 </StyledDescriptionSubtitle>
               </Box>
             </StyledImageDescription>
+            <IconButton
+              onClick={() => setSelectedImage(null)}
+              sx={{
+                position: "absolute",
+                zIndex: "10",
+                top: "10px",
+                right: "10px",
+              }}
+            >
+              <Close
+                sx={{
+                  fontSize: "2rem",
+                }}
+              />
+            </IconButton>
           </StyledImageContainer>
-        ))}
-      </StyledGridContainer>
-    </StyledSection>
+        </Box>
+      </Dialog>
+    </>
   );
 };
 

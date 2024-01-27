@@ -6,6 +6,8 @@ export const StyledGridContainer = styled("div")({
   gridTemplate: "1fr / repeat(auto-fit,minmax(250px,350px))",
   gap: "30px",
   justifyContent: "center",
+  alignContent: "center",
+  justifyItems: "center",
   alignItems: "stretch",
 });
 

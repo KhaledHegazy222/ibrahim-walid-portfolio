@@ -13,9 +13,10 @@ const images = [details1, details2, details3];
 const Details = ({ title, content: pageDetails }) => {
   const { language } = useLanguage();
   const content = contentData[language].details;
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  });
   return (
     <StyledSection>
       <h2

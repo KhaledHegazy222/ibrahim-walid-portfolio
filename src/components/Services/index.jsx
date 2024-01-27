@@ -93,7 +93,11 @@ const Services = () => {
         {content.services.map((service, index) => (
           <StyledGridItem key={index}>
             <Link to={service.path}>
-              <StyledImage src={imagesLookup.find(image=>image.id === service.id).image} />
+              <StyledImage
+                src={
+                  imagesLookup.find((image) => image.id === service.id).image
+                }
+              />
               <h5
                 style={{
                   color: "#191919",
